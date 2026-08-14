@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Editable health hub landing page prototype" />
+    <title>Vitamins & Nutrients | Health Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Onfy Health Hubs">onfy</a>
+        <form class="search" onsubmit="return false">
+          <span aria-hidden="true">⌕</span><input aria-label="Search" placeholder="Search for products, e.g. vitamin D3" /><button>Search</button>
+        </form>
+        <nav class="nav"><button>▦<span>Recipes</span></button><button>⇥<span>Sign in</span></button><button class="language">◎ EN⌄</button></nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="container breadcrumbs">Home <span>›</span> Categories <span>›</span> <b>Vitamins & Nutrients</b></div>
+      <section class="container hero">
+        <div class="hero-copy"><p class="eyebrow">HEALTH HUB</p><h1>Vitamins: honest answers, real pharmacy prices.</h1><p class="lead"><i></i> What the research supports, and what you can simply skip.</p></div>
+        <div class="hero-media"><img src="https://onfy-landings.vercel.app/vitamins/hub/assets/hero.webp" alt="Person holding supplements" /></div>
+      </section>
+
+      <section class="container trust-bar" aria-label="Benefits">
+        <p>♧ <span>Licensed German pharmacies</span></p><p>◇ <span>Prices from 25 pharmacies compared</span></p><p>▱ <span>Delivery in 1 to 3 working days</span></p><p>♙ <span>50,000+ customers across Germany</span></p>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading"><div><h2>Where would you like to start?</h2><p>Pick what matters right now. The whole page filters to your pick.</p></div><button class="clear" hidden>Show all ×</button></div>
+        <div class="goal-grid" id="goals"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading"><div><h2>Popular right now</h2><p>What customers actually order, not what gets advertised the loudest.</p></div><div class="arrows"><button data-rail="products" data-direction="-1" aria-label="Previous products">‹</button><button data-rail="products" data-direction="1" aria-label="Next products">›</button></div></div>
+        <div class="chips" id="chips"></div>
+        <div class="rail" id="products"></div>
+      </section>
+
+      <section class="container section knowledge">
+        <h2>Evidence, without the wellness fog.</h2>
+        <div class="article-grid"><article><span>01</span><h3>Check the active dose</h3><p>Compare what is actually in one daily serving—not the size of the package.</p></article><article><span>02</span><h3>Know when to ask</h3><p>A blood test and pharmacist advice are better than guessing a deficiency.</p></article><article><span>03</span><h3>Keep it simple</h3><p>Do not combine products with the same nutrient unless a professional recommends it.</p></article></div>
+      </section>
+    </main>
+    <footer><div class="container"><b>onfy</b><p>Editable Health Hub prototype · Replace content, products and imagery in <code>app.js</code>.</p></div></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
