@@ -11,7 +11,6 @@
 .wordmark { font-family: var(--onfy-font-body); font-weight: 800; font-size: 26px; letter-spacing: -0.03em; line-height: 1; }
 .wordmark.purple { color: var(--onfy-brand); }
 .wordmark.dark { color: var(--onfy-text-primary); }
-.brand-logo { display: block; width: 102px; height: auto; }
 
 /* Hero without an image column */
 .hero.noimg { grid-template-columns: 1fr; }
@@ -105,5 +104,4 @@
   .pcard.wide { flex-basis: 208px; }
   .prail { gap: 14px; }
   .wordmark { font-size: 22px; }
-  .brand-logo { width: 87px; }
 }
