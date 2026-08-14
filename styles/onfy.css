@@ -1,0 +1,364 @@
+/* Onfy design system + gut-hub template CSS, extracted verbatim from the shipped Fable bundle. Fonts: DM Sans via Google Fonts (loaded in index.html). Image assets stripped (prototype has none). */
+/* Onfy webfonts.
+   Brand stack: DM Sans (primary UI + body), Inter (secondary/legacy UI),
+   Golos Text (alternate body). "Onfy" is a proprietary display face used for
+   the logo + hero headings â€” it is SUBSTITUTED here with DM Sans (closest
+   geometric grotesque). Replace with the licensed Onfy webfont when available. */
+
+/* latin-ext */
+
+/* latin */
+
+/* latin-ext */
+
+/* latin */
+
+/* latin-ext */
+
+/* latin */
+
+/* latin-ext */
+
+/* latin */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek-ext */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek-ext */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek-ext */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+/* cyrillic-ext */
+
+/* cyrillic */
+
+/* greek-ext */
+
+/* greek */
+
+/* vietnamese */
+
+/* latin-ext */
+
+/* latin */
+
+
+
+/* Onfy display face â†’ DM Sans substitute. Swap the src when the real font lands. */
+
+
+
+
+/* ===== BLOCK ===== */
+
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless â€” multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --accent-0: rgb(255,255,255); /* @kind color */
+  --accent-1000: rgb(0,0,0); /* @kind color */
+  --accent-100: rgb(198,234,233); /* @kind color */
+  --accent-10: rgb(248,252,252); /* @kind color */
+  --accent-200: rgb(142,212,211); /* @kind color */
+  --accent-25: rgb(244,251,251); /* @kind color */
+  --accent-300: rgb(107,199,197); /* @kind color */
+  --accent-400: rgb(73,186,184); /* @kind color */
+  --accent-500: var(--base-accent); /* @kind color */
+  --accent-50: rgb(232,246,246); /* @kind color */
+  --accent-600: rgb(24,144,141); /* @kind color */
+  --accent-700: rgb(20,118,116); /* @kind color */
+  --accent-800: rgb(17,101,100); /* @kind color */
+  --accent-900: rgb(14,85,83); /* @kind color */
+  --accent-925: rgb(11,68,66); /* @kind color */
+  --accent-950: rgb(10,59,58); /* @kind color */
+  --accent-990: rgb(6,34,33); /* @kind color */
+  --accent-primary: rgb(108,57,253); /* @kind color */
+  --alpha-black-10: rgba(0,0,0,0.1); /* @kind color */
+  --alpha-black-20: rgba(0,0,0,0.2); /* @kind color */
+  --alpha-black-30: rgba(0,0,0,0.3); /* @kind color */
+  --alpha-black-40: rgba(0,0,0,0.4); /* @kind color */
+  --alpha-black-50: rgba(0,0,0,0.5); /* @kind color */
+  --alpha-black-5: rgba(0,0,0,0.05); /* @kind color */
+  --alpha-black-60: rgba(0,0,0,0.6); /* @kind color */
+  --alpha-black-70: rgba(0,0,0,0.7); /* @kind color */
+  --alpha-black-80: rgba(0,0,0,0.8); /* @kind color */
+  --alpha-black-90: rgba(0,0,0,0.9); /* @kind color */
+  --alpha-white-10: rgba(255,255,255,0.1); /* @kind color */
+  --alpha-white-20: rgba(255,255,255,0.2); /* @kind color */
+  --alpha-white-30: rgba(255,255,255,0.3); /* @kind color */
+  --alpha-white-40: rgba(255,255,255,0.4); /* @kind color */
+  --alpha-white-50: rgba(255,255,255,0.5); /* @kind color */
+  --alpha-white-5: rgba(255,255,255,0.05); /* @kind color */
+  --alpha-white-60: rgba(255,255,255,0.6); /* @kind color */
+  --alpha-white-70: rgba(255,255,255,0.7); /* @kind color */
+  --alpha-white-80: rgba(255,255,255,0.8); /* @kind color */
+  --alpha-white-90: rgba(255,255,255,0.9); /* @kind color */
+  --background-primary: rgb(255,255,255); /* @kind color */
+  --background-secondary: rgb(241,242,244); /* @kind color */
+  --background-surface1: var(--neutral-0); /* @kind color */
+  --background-surface4: var(--neutral-50); /* @kind color */
+  --base-accent: rgb(28,169,166); /* @kind color */
+  --base-error: rgb(224,55,61); /* @kind color */
+  --base-extra-01: rgb(132,188,71); /* @kind color */
+  --base-extra-02: rgb(120,85,82); /* @kind color */
+  --base-extra-03: rgb(227,170,79); /* @kind color */
+  --base-extra-04: rgb(142,100,56); /* @kind color */
+  --base-extra-05: rgb(154,146,99); /* @kind color */
+  --base-extra-06: rgb(95,157,171); /* @kind color */
+  --base-extra-07: rgb(174,132,135); /* @kind color */
+  --base-neutral-2: rgb(130,132,138); /* @kind color */
+  --base-neutral: rgb(137,137,137); /* @kind color */
+  --base-succes: rgb(53,151,72); /* @kind color */
+  --base-warning: rgb(242,145,0); /* @kind color */
+  --border-muted: rgba(137,137,137,0.15); /* @kind color */
+  --border-radius-base: 8;
+  --border-radius-full: 999;
+  --border-radius-m: var(--border-radius-base);
+  --border-radius-xl: 16;
+  --colors-background-bg-primary: var(--colors-base-white); /* @kind color */
+  --colors-background-bg-secondary: var(--colors-gray-light-mode-50); /* @kind color */
+  --colors-base-black: rgb(0,0,0); /* @kind color */
+  --colors-base-transparent: rgba(255,255,255,0); /* @kind color */
+  --colors-base-white: rgb(255,255,255); /* @kind color */
+  --colors-effects-shadows-shadow-sm-01: rgba(16,24,40,0.1); /* @kind color */
+  --colors-effects-shadows-shadow-sm-02: rgba(16,24,40,0.06); /* @kind color */
+  --colors-effects-shadows-shadow-xs: rgba(16,24,40,0.05); /* @kind color */
+  --colors-foreground-fg-primary-900: var(--colors-gray-light-mode-900); /* @kind color */
+  --colors-foreground-fg-quinary-400: var(--colors-gray-light-mode-400); /* @kind color */
+  --colors-foreground-fg-quinary-hover: var(--colors-gray-light-mode-500); /* @kind color */
+  --colors-foreground-fg-white: var(--colors-base-white); /* @kind color */
+  --colors-gray-dark-mode-300: rgb(206,207,210); /* @kind color */
+  --colors-gray-dark-mode-400: rgb(148,150,156); /* @kind color */
+  --colors-gray-dark-mode-500: rgb(133,136,142); /* @kind color */
+  --colors-gray-dark-mode-50: rgb(245,245,246); /* @kind color */
+  --colors-gray-dark-mode-900: rgb(22,27,38); /* @kind color */
+  --colors-gray-dark-mode-950: rgb(12,17,29); /* @kind color */
+  --colors-gray-light-mode-400: rgb(152,162,179); /* @kind color */
+  --colors-gray-light-mode-500: rgb(102,112,133); /* @kind color */
+  --colors-gray-light-mode-50: rgb(249,250,251); /* @kind color */
+  --colors-gray-light-mode-600: rgb(71,84,103); /* @kind color */
+  --colors-gray-light-mode-700: rgb(52,64,84); /* @kind color */
+  --colors-gray-light-mode-900: rgb(16,24,40); /* @kind color */
+  --colors-text-text-primary-900: var(--colors-gray-light-mode-900); /* @kind color */
+  --colors-text-text-secondary-700: var(--colors-gray-light-mode-700); /* @kind color */
+  --colors-text-text-tertiary-600: var(--colors-gray-light-mode-600); /* @kind color */
+  --component-colors-components-icons-social-icons-social-icon-fg-angellist: var(--colors-base-black); /* @kind color */
+  --component-colors-components-icons-social-icons-social-icon-fg-apple: var(--colors-base-black); /* @kind color */
+  --component-colors-components-icons-social-icons-social-icon-fg-github: var(--colors-base-black); /* @kind color */
+  --component-colors-components-icons-social-icons-social-icon-fg-instagram: rgb(0,1,0); /* @kind color */
+  --component-colors-components-icons-social-icons-social-icon-fg-tumblr: rgb(0,25,53); /* @kind color */
+  --component-colors-components-icons-social-icons-social-icon-fg-x: rgb(36,46,54); /* @kind color */
+  --error-0: rgb(255,255,255); /* @kind color */
+  --error-1000: rgb(0,0,0); /* @kind color */
+  --error-100: rgb(247,205,207); /* @kind color */
+  --error-10: rgb(254,249,249); /* @kind color */
+  --error-200: rgb(240,155,158); /* @kind color */
+  --error-25: rgb(253,245,245); /* @kind color */
+  --error-300: rgb(235,125,129); /* @kind color */
+  --error-400: rgb(230,95,100); /* @kind color */
+  --error-500: var(--base-error); /* @kind color */
+  --error-50: rgb(252,235,236); /* @kind color */
+  --error-600: rgb(190,47,52); /* @kind color */
+  --error-700: rgb(157,39,43); /* @kind color */
+  --error-800: rgb(134,33,37); /* @kind color */
+  --error-900: rgb(112,28,31); /* @kind color */
+  --error-925: rgb(90,22,24); /* @kind color */
+  --error-950: rgb(78,19,21); /* @kind color */
+  --error-990: rgb(45,11,12); /* @kind color */
+  --external-klarna-bg: rgb(255,179,199); /* @kind color */
+  --external-klarna-fg: rgb(11,5,29); /* @kind color */
+  --external-paypal-bg: rgb(255,196,58); /* @kind color */
+  --extra-01-0: rgb(255,255,255); /* @kind color */
+  --extra-01-1000: rgb(0,0,0); /* @kind color */
+  --extra-01-100: rgb(224,238,209); /* @kind color */
+  --extra-01-10: rgb(251,253,249); /* @kind color */
+  --extra-01-200: rgb(194,222,163); /* @kind color */
+  --extra-01-25: rgb(250,252,245); /* @kind color */
+  --extra-01-300: rgb(175,211,135); /* @kind color */
+  --extra-01-400: rgb(157,201,108); /* @kind color */
+  --extra-01-500: var(--base-extra-01); /* @kind color */
+  --extra-01-50: rgb(243,248,237); /* @kind color */
+  --extra-01-600: rgb(111,160,59); /* @kind color */
+  --extra-01-700: rgb(93,132,51); /* @kind color */
+  --extra-01-800: rgb(79,113,43); /* @kind color */
+  --extra-01-900: rgb(66,94,36); /* @kind color */
+  --extra-01-925: rgb(54,75,28); /* @kind color */
+  --extra-01-950: rgb(46,66,25); /* @kind color */
+  --extra-01-990: rgb(25,38,14); /* @kind color */
+  --extra-02-0: rgb(255,255,255); /* @kind color */
+  --extra-02-1000: rgb(0,0,0); /* @kind color */
+  --extra-02-100: rgb(222,213,212); /* @kind color */
+  --extra-02-10: rgb(251,250,250); /* @kind color */
+  --extra-02-200: rgb(188,170,169); /* @kind color */
+  --extra-02-25: rgb(248,247,246); /* @kind color */
+  --extra-02-300: rgb(167,145,143); /* @kind color */
+  --extra-02-400: rgb(148,119,117); /* @kind color */
+  --extra-02-500: var(--base-extra-02); /* @kind color */
+  --extra-02-50: rgb(242,238,238); /* @kind color */
+  --extra-02-600: rgb(101,72,70); /* @kind color */
+  --extra-02-700: rgb(84,59,57); /* @kind color */
+  --extra-02-800: rgb(72,51,49); /* @kind color */
+  --extra-02-900: rgb(59,43,41); /* @kind color */
+  --extra-02-925: rgb(48,34,33); /* @kind color */
+  --extra-02-950: rgb(42,30,29); /* @kind color */
+  --extra-02-990: rgb(24,17,16); /* @kind color */
+  --extra-03-0: rgb(255,255,255); /* @kind color */
+  --extra-03-1000: rgb(0,0,0); /* @kind color */
+  --extra-03-100: rgb(249,233,211); /* @kind color */
+  --extra-03-10: rgb(254,252,250); /* @kind color */
+  --extra-03-200: rgb(241,213,166); /* @kind color */
+  --extra-03-25: rgb(253,251,245); /* @kind color */
+  --extra-03-300: rgb(237,200,142); /* @kind color */
+  --extra-03-400: rgb(233,187,113); /* @kind color */
+  --extra-03-500: var(--base-extra-03); /* @kind color */
+  --extra-03-50: rgb(252,247,237); /* @kind color */
+  --extra-03-600: rgb(193,145,67); /* @kind color */
+  --extra-03-700: rgb(159,119,55); /* @kind color */
+  --extra-03-800: rgb(136,102,47); /* @kind color */
+  --extra-03-900: rgb(115,85,40); /* @kind color */
+  --extra-03-925: rgb(90,68,32); /* @kind color */
+  --extra-03-950: rgb(79,59,28); /* @kind color */
+  --extra-03-990: rgb(45,34,17); /* @kind color */
+  --extra-04-0: rgb(255,255,255); /* @kind color */
+  --extra-04-1000: rgb(0,0,0); /* @kind color */
+  --extra-04-100: rgb(227,216,205); /* @kind color */
+  --extra-04-10: rgb(251,250,249); /* @kind color */
+  --extra-04-200: rgb(200,178,156); /* @kind color */
+  --extra-04-25: rgb(249,247,245); /* @kind color */
+  --extra-04-300: rgb(181,154,125); /* @kind color */
+  --extra-04-400: rgb(165,131,96); /* @kind color */
+  --extra-04-500: var(--base-extra-04); /* @kind color */
+  --extra-04-50: rgb(244,240,234); /* @kind color */
+  --extra-04-600: rgb(121,86,48); /* @kind color */
+  --extra-04-700: rgb(99,70,39); /* @kind color */
+  --extra-04-800: rgb(85,60,34); /* @kind color */
+  --extra-04-900: rgb(71,50,28); /* @kind color */
+  --extra-04-925: rgb(56,40,22); /* @kind color */
+  --extra-04-950: rgb(50,35,20); /* @kind color */
+  --extra-04-990: rgb(28,20,11); /* @kind color */
+  --extra-05-0: rgb(255,255,255); /* @kind color */
+  --extra-05-1000: rgb(0,0,0); /* @kind color */
+  --extra-05-100: rgb(230,228,216); /* @kind color */
+  --extra-05-10: rgb(252,252,250); /* @kind color */
+  --extra-05-200: rgb(205,201,177); /* @kind color */
+  --extra-05-25: rgb(250,250,247); /* @kind color */
+  --extra-05-300: rgb(189,184,154); /* @kind color */
+  --extra-05-400: rgb(174,168,130); /* @kind color */
+  --extra-05-500: var(--base-extra-05); /* @kind color */
+  --extra-05-50: rgb(245,244,238); /* @kind color */
+  --extra-05-600: rgb(131,124,84); /* @kind color */
+  --extra-05-700: rgb(108,102,69); /* @kind color */
+  --extra-05-800: rgb(92,88,59); /* @kind color */
+  --extra-05-900: rgb(77,73,50); /* @kind color */
+  --extra-05-925: rgb(62,58,40); /* @kind color */
+  --extra-05-950: rgb(53,51,35); /* @kind color */
+  --extra-05-990: rgb(31,29,20); /* @kind color */
+  --extra-06-0: rgb(255,255,255); /* @kind color */
+  --extra-06-1000: rgb(0,0,0); /* @kind color */
+  --extra-06-100: rgb(215,230,234); /* @kind color */
+  --extra-06-10: rgb(250,252,252); /* @kind color */
+  --extra-06-200: rgb(175,206,213); /* @kind color */
+  --extra-06-25: rgb(248,250,251); /* @kind color */
+  --extra-06-300: rgb(151,191,200); /* @kind color */
+  --extra-06-400: rgb(127,177,188); /* @kind color */
+  --extra-06-500: var(--base-extra-06); /* @kind color */
+  --extra-06-50: rgb(239,245,247); /* @kind color */
+  --extra-06-600: rgb(81,133,145); /* @kind color */
+  --extra-06-700: rgb(67,110,120); /* @kind color */
+  --extra-06-800: rgb(56,94,103); /* @kind color */
+  --extra-06-900: rgb(48,79,86); /* @kind color */
+  --extra-06-925: rgb(39,63,68); /* @kind color */
+  --extra-06-950: rgb(33,55,60); /* @kind color */
+  --extra-06-990: rgb(19,31,34); /* @kind color */
+  --extra-07-0: rgb(255,255,255); /* @kind color */
+  --extra-07-1000: rgb(0,0,0); /* @kind color */
+  --extra-07-100: rgb(235,224,225); /* @kind color */
+  --extra-07-10: rgb(252,251,251); /* @kind color */
+  --extra-07-200: rgb(214,194,195); /* @kind color */
+  --extra-07-25: rgb(251,249,249); /* @kind color */
+  --extra-07-300: rgb(203,175,177); /* @kind color */
+  --extra-07-400: rgb(190,157,159); /* @kind color */
+  --extra-07-500: var(--base-extra-07); /* @kind color */
+  --extra-07-50: rgb(247,243,243); /* @kind color */
+  --extra-07-600: rgb(148,112,115); /* @kind color */
+  --extra-07-700: rgb(122,92,95); /* @kind color */
+  --extra-07-800: rgb(104,79,81); /* @kind color */
+  --extra-07-900: rgb(87,66,68); /* @kind color */
+  --extra-07-925: rgb(70,53,54); /* @kind color */
+  --extra-07-950: rgb(61,46,47); /* @kind color */
+  --extra-07-990: rgb(36,26,27); /* @kind color */
+  --extra-colors-sun: rgb(255,252,169); /* @kind color */
+  --fg-default: var(--neutral-950-2); /* @kind color */
+  --fg-soft: var(--neutral-500-2); /* @kind color */
+  --font-fami×¾·ŞÚ$z{-®éÜj×S¦×VÇF—Ç—Ğ¢ç6V7·FF–ær×F÷£C‡‡Ğ¢çG'W7G&÷w·FF–ær×F÷£3‡Ğ¢çG'W7G¶F—7Æ“¦fÆWƒ¶fÆW‚×w&§w&¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦fÆW‚×7F'C·&÷rÖv£‡‡Ğ¢çF6†—¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£‡ƒ·FF–æs£'‚#'ƒ¶&÷&FW"ÖÆVgC£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"×7V'FÆR—Ğ¢çF6g¶&÷&FW"ÖÆVgC¦æöæS·FF–ærÖÆVgC£Ğ¢çF–6÷¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶fÆWƒ¦æöæWĞ¢çFÆ&VÇ¶föçB×6—¦S£7ƒ¶föçB×vV–v‡C£S¶Æ–æRÖ†V–v‡C£ã3¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“·v†—FR×76S¦æ÷w&Ğ¢ç6V6†VG¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦fÆW‚ÖVæC¶§W7F–g’Ö6öçFVçC§76RÖ&WGvVVã¶v£g‡Ğ¢ç6V7GFÇ¶föçB×6—¦S£#wƒ¶föçB×vV–v‡C£s¶ÆWGFW"×76–æs¢ÓãVVÓ¶Ö&v–ã£¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’—Ğ¢ç6V77V'¶föçB×6—¦S£Wƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶Ö&v–ã£g‚·FW‡B×w&§&WGG—Ğ¢ç6V7&–v‡G¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£'‡Ğ¢ç6†÷vÆÇ¶föçB×6—¦S£Gƒ¶föçB×vV–v‡C£c¶6öÆ÷#§f"‚ÒÖöæg’Ö'&æB“·FW‡BÖFV6÷&F–öã¦æöæS·v†—FR×76S¦æ÷w&¶&6¶w&÷VæC¦æöæS¶&÷&FW#¦æöæS¶7W'6÷#§ö–çFW#¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£W‡Ğ¢ç6†÷vÆÃ¦†÷fW'·FW‡BÖFV6÷&F–öã§VæFW&Æ–æWĞ¢æ'&÷v'Fç·v–GFƒ£C'ƒ¶†V–v‡C£C'ƒ¶&÷&FW"×&F—W3£SS¶&÷&FW#£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"“¶&6¶w&÷VæC¢6ffc¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶7W'6÷#§ö–çFW#¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW'Ğ¢æ'&÷v'Fã¦†÷fW'¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’—Ğ¢æ6†—7¶F—7Æ“¦fÆWƒ¶fÆW‚×w&§w&¶v£‡ƒ¶Ö&v–ã£g‚#'ƒ·FF–æs£Ğ¢æ6†—¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶†V–v‡C£3Gƒ·FF–æs£Wƒ¶&÷&FW"×&F—W3£““—ƒ¶&÷&FW#¦æöæS¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’“¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“¶föçB×vV–v‡C£S¶föçB×6—¦S£7ƒ¶7W'6÷#§ö–çFW#·v†—FR×76S¦æ÷w&·G&ç6—F–öã¦&6¶w&÷VæBãW2Æ6öÆ÷"ãW7Ğ¢æ6†—¦†÷fW'¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×6V6öæF'’“¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’—Ğ¢æ6†—æöç¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö'&æB“¶6öÆ÷#¢6ffc¶föçB×vV–v‡C£cĞ¢æ6†—æöã£¦gFW'¶6öçFVçC¢.)ÉR#¶Ö&v–âÖÆVgC£‡ƒ¶föçB×6—¦S£ƒ¶föçB×vV–v‡C£s¶÷6—G“£ã—Ğ¢ç66&C¦fö7W7¶÷WFÆ–æS¦æöæWĞ¢æ6†—¦fö7W7¶÷WFÆ–æS¦æöæWĞ¢æ6†—æöæ'¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö'&æB“¶6öÆ÷#¢6ffc¶föçB×vV–v‡C£cĞ¢ç7F'Fw&–G¶F—7Æ“¦w&–C¶w&–B×FV×ÆFRÖ6öÇVÖç3§&WVBƒ2Ãg"“¶v£‡ƒ·FF–ær×F÷£#'‡Ğ¢ç66''¶F—7Æ“¦æöæWÒç66&G·÷6—F–öã§&VÆF—fS¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã§&÷s¶Æ–vâÖ—FV×3¦6VçFW#¶v£‡ƒ¶Ö–âÖ†V–v‡C£#‡ƒ¶&÷&FW"×&F—W3£gƒ¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×6V6öæF'’“¶&÷&FW#£ãW‚6öÆ–BG&ç7&VçC·FF–æs£#‚#'ƒ¶7W'6÷#§ö–çFW#·FW‡BÖÆ–vã¦ÆVgC¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“·G&ç6—F–öã¦&÷‚×6†F÷rãW2Æ&÷&FW"Ö6öÆ÷"ãW2Æ&6¶w&÷VæBãW7Ğ¢ç66&C¦†÷fW'¶&÷‚×6†F÷s§f"‚ÒÖöæg’×6†F÷rÖ6&B“¶&÷&FW"Ö6öÆ÷#§f"‚ÒÖöæg’Ö&÷&FW"—Ğ¢ç66&Bæöç¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö'&æB×6ögFW"“¶&÷&FW"Ö6öÆ÷#§f"‚ÒÖöæg’Ö'&æB—Ğ¢ç67FW‡G¶fÆWƒ£¶Ö–â×v–GFƒ£¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖçĞ¢ç66Æ&VÇ¶föçB×vV–v‡C£s¶föçB×6—¦S£‡ƒ¶Æ–æRÖ†V–v‡C£ã##¶ÆWGFW"×76–æs¢ÓãVÓ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’—Ğ¢ç677V'¶föçB×6—¦S£2ãWƒ¶Æ–æRÖ†V–v‡C£ãCS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶Ö&v–â×F÷£w‡Ğ¢ç6–ÆÇW¶fÆWƒ¦æöæS·v–GFƒ£Gƒ¶†V–v‡C£Gƒ¶&6¶w&÷VæB×6—¦S¦6öçF–ã¶&6¶w&÷VæB×&WVC¦æò×&WVC¶&6¶w&÷VæB×÷6—F–öã¦6VçFW'Ğ¢æ–ÆÇRÖ6öç7F—F–öç·Ğ¢æ–ÆÇRÖfÆ÷&·Ğ¢æ–ÆÇRÖgVÆÆæW77·Ğ¢æ–ÆÇRÖF–'&†V·Ğ¢æ–ÆÇRÖ†V'F'W&ç·Ğ¢æ–ÆÇRÖ–'7·Ğ¢æÖ÷&W&÷w¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£ƒ¶fÆW‚×w&§w&¶Ö&v–â×F÷£‡‡Ğ¢æÖ÷&VÆ&VÇ¶föçB×6—¦S£7ƒ¶föçB×vV–v‡C£c¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶Ö&v–â×&–v‡C£'‡Ğ¢æ6ÆV&'Fç¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£gƒ¶&6¶w&÷VæC¦æöæS¶&÷&FW#¦æöæS¶7W'6÷#§ö–çFW#¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“¶föçB×6—¦S£7ƒ¶föçB×vV–v‡C£c·FF–æs£w‚ƒ¶&÷&FW"×&F—W3£‡‡Ğ¢æ6ÆV&'Fã¦†÷fW'¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’—Ğ¢æ66æ÷FW¶föçB×6—¦S£7ƒ¶Æ–æRÖ†V–v‡C£ãS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶Ö&v–ã£‡‚¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦fÆW‚×7F'C¶v£‡‡Ğ¢æ66æ÷FV–6÷¶fÆWƒ¦æöæS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶Ö&v–â×F÷£‡Ğ¢ç&f†–çG¶F—7Æ“¦fÆWƒ¶v£7ƒ¶Æ–vâÖ—FV×3¦fÆW‚×7F'C¶&6¶w&÷VæC§f"‚ÒÖöæg’×v&æ–ær×6ögB“¶&÷&FW#£‚6öÆ–B&v&ƒ#SRÃ‚ÃcÃã#"“¶&÷&FW"×&F—W3£Gƒ·FF–æs£G‚‡ƒ¶Ö&v–â×F÷£g‡Ğ¢ç&f–6÷·v–GFƒ£3‡ƒ¶†V–v‡C£3‡ƒ¶&÷&FW"×&F—W3£ƒ¶&6¶w&÷VæC¢6ffc¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#¶6öÆ÷#§f"‚ÒÖöæg’×v&æ–ær“¶fÆWƒ¦æöæWĞ¢ç&gFW‡G¶föçB×6—¦S£2ãWƒ¶Æ–æRÖ†V–v‡C£ãS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶Ö&v–ã£¶Æ–vâ×6VÆc¦6VçFW'Ğ¢ç&gFW‡B'¶föçB×vV–v‡C£sĞ¢æöæÇ–Öö'¶F—7Æ“¦æöæWĞ¢æÖf–ÇFW'¶F—7Æ“¦æöæWĞ¢æÖÆ—7G¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖã¶v£ƒ¶Ö&v–â×F÷£G‡Ğ¢æ×&÷w¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£Gƒ·FF–æs£'ƒ¶&÷&FW#£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"×7V'FÆR“¶&÷&FW"×&F—W3£Gƒ¶&6¶w&÷VæC¢6ffgĞ¢æ×vVÆÇ·v–GFƒ£cƒ¶†V–v‡C£cƒ¶&÷&FW"×&F—W3£'ƒ¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’“¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#¶fÆWƒ¦æöæS¶6öÆ÷#§f"‚ÒÖöæg’Ö&÷&FW"×7G&öær“¶÷fW&fÆ÷s¦†–FFVçĞ¢æÖ–Öw·v–GFƒ£S¶†V–v‡C£S¶&6¶w&÷VæB×6—¦S¦6öçF–ã¶&6¶w&÷VæB×÷6—F–öã¦6VçFW#¶&6¶w&÷VæB×&WVC¦æò×&WVGĞ¢æv–ÖrÖÖ÷f–6öÇ·Ğ¢æv–ÖrÖ¶–¦–ÖV·Ğ¢æv–ÖrÖöÖæ–&–÷F–7·Ğ¢æv–ÖrÖ·&Vöç·Ğ¢æv–ÖrÖ–&W&öv7G·Ğ¢æv–ÖrÖ–ÖöF—V×·Ğ¢æÖ&öG—¶fÆWƒ£¶Ö–â×v–GFƒ£Ğ¢æÖæÖW¶föçB×6—¦S£2ãWƒ¶föçB×vV–v‡C£S¶Æ–æRÖ†V–v‡C£ã3¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶F—7Æ“¢×vV&¶—BÖ&÷ƒ²×vV&¶—BÖÆ–æRÖ6Æ×£#²×vV&¶—BÖ&÷‚Ö÷&–VçC§fW'F–6Ã¶÷fW&fÆ÷s¦†–FFVçĞ¢æ×'¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦&6VÆ–æS¶v£gƒ¶Ö&v–â×F÷£G‡Ğ¢æ×"'¶föçB×6—¦S£Gƒ¶föçB×vV–v‡C£s¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’—Ğ¢æ×"7¶föçB×6—¦S£ƒ¶6öÆ÷#¢3”dt#Ğ¢æ×Væ—G¶föçB×6—¦S£ãWƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶Ö&v–â×F÷£‡Ğ¢æÖFG·v–GFƒ£Cƒ¶†V–v‡C£Cƒ¶&÷&FW"×&F—W3£SS¶&÷&FW#¦æöæS¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö'&æB“¶6öÆ÷#¢6ffc¶fÆWƒ¦æöæS¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#¶7W'6÷#§ö–çFW#¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“¶föçB×vV–v‡C£s¶föçB×6—¦S£g‡Ğ¢æÖFBæ–ç¶&6¶w&÷VæC§f"‚ÒÖöæg’×7V66W72—Ğ¢æV×G–æ÷FW¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC§76RÖ&WGvVVã¶v£gƒ¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’“¶&÷&FW#£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"×7V'FÆR“¶&÷&FW"×&F—W3£gƒ·FF–æs£#‚#Gƒ¶Ö&v–â×F÷£‡‡Ğ¢æV×G–æ÷FR7ç¶föçB×6—¦S£Wƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’—Ğ¢ç&W6WF'Fç¶†V–v‡C£Cƒ·FF–æs£#ƒ¶&÷&FW"×&F—W3£““—ƒ¶&÷&FW#¦æöæS¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö'&æB“¶6öÆ÷#¢6ffc¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“¶föçB×vV–v‡C£s¶föçB×6—¦S£Gƒ¶7W'6÷#§ö–çFW#·v†—FR×76S¦æ÷w&Ğ¢æWfw&–G¶F—7Æ“¦w&–C¶w&–B×FV×ÆFRÖ6öÇVÖç3§&WVBƒ2Ãg"“¶v£gƒ¶Ö&v–â×F÷£#'‡Ğ¢æWf6&G¶&6¶w&÷VæC¢6ffc¶&÷&FW#£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"×7V'FÆR“¶&÷&FW"×&F—W3£gƒ·FF–æs£#'‚#'‚#Gƒ¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖã¶v£‡Ğ¢æWgF÷¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC§76RÖ&WGvVVã¶v£‡ƒ¶fÆW‚×w&§w&Ğ¢æWgF–W'¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#·v†—FR×76S¦æ÷w&·FF–æs£G‚ƒ¶&÷&FW"×&F—W3£‡ƒ¶föçB×6—¦S£ƒ¶föçB×vV–v‡C£s¶Æ–æRÖ†V–v‡C£ã#¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×6V6öæF'’“¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’—Ğ¢æWgF–W"çF÷¶&6¶w&÷VæC§&v"ƒ#32Ã#C‚Ã#3b“¶6öÆ÷#¢3vCFGĞ¢æWg7V'¶föçB×6—¦S£"ãWƒ¶föçB×vV–v‡C£S¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶Ö&v–â×F÷¢Óg‡Ğ¢æWgFw7¶F—7Æ“¦fÆWƒ¶fÆW‚×w&§w&×&WfW'6S¶v£gƒ¶Ö&v–â×F÷¦WFó·FF–ær×F÷£G‡Ğ¢æWgFw¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£Wƒ·FF–æs£W‚‚W‚‡ƒ¶&÷&FW"×&F—W3£““—ƒ¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×6V6öæF'’“¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶föçB×6—¦S£ãWƒ¶föçB×vV–v‡C£c¶Æ–æRÖ†V–v‡C£ãWĞ¢æWgFr7fw¶fÆWƒ¦æöæWĞ¢æWg–ÆÇ¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#·v†—FR×76S¦æ÷w&·FF–æs£G‚ƒ¶&÷&FW"×&F—W3£‡ƒ¶föçB×6—¦S£ãWƒ¶föçB×vV–v‡C£s¶Æ–æRÖ†V–v‡C£ã#·FW‡B×G&ç6f÷&Ó§WW&66S¶ÆWGFW"×76–æs£ãFV×Ğ¢æWg–ÆÂæÖVG¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö'&æB×6ögB“¶6öÆ÷#§f"‚ÒÖöæg’Ö'&æB—Ğ¢æWg–ÆÂæFWf–6W¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö–æfò×6ögB“¶6öÆ÷#§f"‚ÒÖöæg’Ö–æfò—Ğ¢æWg–ÆÂæ†W&&Ç¶&6¶w&÷VæC§&v"ƒ#32Ã#C‚Ã#3b“¶6öÆ÷#¢3vCFGĞ¢æWg–ÆÂç7W¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×6V6öæF'’“¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’—Ğ¢æWfæÖW¶föçB×6—¦S£—ƒ¶föçB×vV–v‡C£s¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶ÆWGFW"×76–æs¢ÓãV×Ğ¢æWfFW67¶föçB×6—¦S£Gƒ¶Æ–æRÖ†V–v‡C£ãSS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’—Ğ¢æWf–çG&÷¶föçB×6—¦S£Wƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶Ö&v–ã£‡‚¶Ö‚×v–GFƒ£s#ƒ¶Æ–æRÖ†V–v‡C£ãWĞ¢æ'G&–Ç¶F—7Æ“¦fÆWƒ¶v£#ƒ¶÷fW&fÆ÷r×ƒ¦WFó·FF–æs£'‚'‚gƒ·67&öÆÂ×6æ×G—S§‚&÷†–Ö—G“·67&öÆÆ&"×v–GFƒ¦æöæWĞ¢æ'G&–Ã£¢×vV&¶—B×67&öÆÆ&'¶F—7Æ“¦æöæWĞ¢æ'F6&G¶fÆWƒ£3ƒ¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖã¶v£ƒ·FW‡BÖFV6÷&F–öã¦æöæS·67&öÆÂ×6æÖÆ–vã§7F'C¶7W'6÷#§ö–çFW'Ğ¢æ'GF‡VÖ'·v–GFƒ£S¶7V7B×&F–ó£bó¶&÷&FW"×&F—W3£gƒ¶÷fW&fÆ÷s¦†–FFVã¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×6V6öæF'’“¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#¶6öÆ÷#§f"‚ÒÖöæg’Ö'&æB“¶Ö&v–âÖ&÷GFöÓ£Gƒ·G&ç6—F–öã¦&÷‚×6†F÷rã‡2V6RÇG&ç6f÷&Òã‡2V6WĞ¢æ'GF‡VÖ"çBÖ†V'F'W&ç¶&6¶w&÷VæC¦Æ–æV"Öw&F–VçBƒ3VFVrÂ6ffc&V2Â6ffSC"“¶6öÆ÷#¢6C#c#&WĞ¢æ'GF‡VÖ"çBÖ–'7¶&6¶w&÷VæC¦Æ–æV"Öw&F–VçBƒ3VFVrÂ6VfV&fbÂ6SC–fb“¶6öÆ÷#§f"‚ÒÖöæg’Ö'&æB—Ğ¢æ'GF‡VÖ"çBÖfÆ÷&¶&6¶w&÷VæC¦Æ–æV"Öw&F–VçBƒ3VFVrÂ6VfcÂ66FVVFB“¶6öÆ÷#¢3vCFGĞ¢æ'GF‡VÖ"çBÖ6öç7F—F–öç¶&6¶w&÷VæC¦Æ–æV"Öw&F–VçBƒ3VFVrÂ6ccVfbÂ6FFS–fb“¶6öÆ÷#¢36c†C‡Ğ¢ævö&§·v–GFƒ£S¶†V–v‡C£S¶&6¶w&÷VæB×&WVC¦æò×&WVC¶&6¶w&÷VæB×÷6—F–öã¦6VçFW"S2S¶&6¶w&÷VæB×6—¦S¦WFò“S·G&ç6—F–öã§G&ç6f÷&Òã‡2V6WĞ¢ævö&¢Ö†V'F'W&ç·Ğ¢ævö&¢Ö6öç7F—F–öç·Ğ¢ævö&¢ÖfÆ÷&·Ğ¢ævö&¢Ö–'7·Ğ¢æ'F6&C¦†÷fW"ævö&§·G&ç6f÷&Ó§66ÆRƒãB—Ğ¢æ'FÖWF¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£gƒ¶föçB×6—¦S£'ƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“·v†—FR×76S¦æ÷w&Ğ¢æ'GF—FÆW¶föçB×6—¦S£wƒ¶föçB×vV–v‡C£c¶Æ–æRÖ†V–v‡C£ã3#¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶Ö–âÖ†V–v‡C£CWƒ¶F—7Æ“¢×vV&¶—BÖ&÷ƒ²×vV&¶—BÖÆ–æRÖ6Æ×£#²×vV&¶—BÖ&÷‚Ö÷&–VçC§fW'F–6Ã¶÷fW&fÆ÷s¦†–FFVçĞ¢æ'G&VG¶F—7Æ“¦–æÆ–æRÖfÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶v£gƒ¶föçB×6—¦S£Gƒ¶föçB×vV–v‡C£s¶6öÆ÷#§f"‚ÒÖöæg’Ö'&æB“¶Ö&v–â×F÷¦WFó·FF–ær×F÷£'ƒ·G&ç6—F–öã¦vãW2V6WĞ¢æ'F6&C¦†÷fW"æ'GF‡VÖ'¶&÷‚×6†F÷s§f"‚ÒÖöæg’×6†F÷rÖ6&B“·G&ç6f÷&Ó§G&ç6ÆFU’‚Ó'‚—Ğ¢æ'F6&C¦†÷fW"æ'GF—FÆW¶6öÆ÷#§f"‚ÒÖöæg’Ö'&æB—Ğ¢æ'F6&C¦†÷fW"æ'G&VG¶v£—‡Ğ¢ç7fv—¶F—7Æ“¦&Æö6·Ğ¢çG'W7F&æG¶Ö&v–â×F÷£C‡ƒ¶&6¶w&÷VæC¢4cdctc“¶&÷&FW"×&F—W3£#Gƒ·FF–æs£S‡‚CG‡Ğ¢çF'F—FÆW·FW‡BÖÆ–vã¦6VçFW#¶Ö&v–ã£3g‡Ğ¢çF&w&–G¶F—7Æ“¦w&–C¶w&–B×FV×ÆFRÖ6öÇVÖç3§&WVBƒ2Ãg"“¶Ö‚×v–GFƒ£ƒ¶Ö&v–ã£WF÷Ğ¢çF&6öÇ¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖã¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#·FW‡BÖÆ–vã¦6VçFW#¶v£‡ƒ·FF–æs£'‚#'ƒ¶Ö–âÖ†V–v‡C£3'‡Ğ¢çF&F—g¶&÷&FW"ÖÆVgC£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"—Ğ¢çF&Æ–æ··FW‡BÖFV6÷&F–öã¦æöæS¶6öÆ÷#¦–æ†W&—C¶&÷&FW"×&F—W3£Gƒ·G&ç6—F–öã¦&6¶w&÷VæBãW2V6WĞ¢çF&Æ–æ³¦†÷fW'¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’—Ğ¢çG6Æöv÷¶†V–v‡C£#gƒ·v–GFƒ¦WFó¶F—7Æ“¦&Æö6³¶Ö&v–âÖ&÷GFöÓ£G‡Ğ¢çF'7F'7·÷6—F–öã§&VÆF—fS¶F—7Æ“¦–æÆ–æRÖ&Æö6³¶Æ–æRÖ†V–v‡C£Ğ¢çF'7F'2Ö&6W¶F—7Æ“¦fÆWƒ¶v£7ƒ¶6öÆ÷#¢4CtD$SĞ¢çF'7F'2Öf–ÆÇ·÷6—F–öã¦'6öÇWFS·F÷£¶ÆVgC£¶F—7Æ“¦fÆWƒ¶v£7ƒ¶÷fW&fÆ÷s¦†–FFVã¶6öÆ÷#¢4D#d##'Ğ¢çF'7F'·v–GFƒ£#ƒ¶†V–v‡C£—ƒ¶fÆWƒ¦æöæS¶F—7Æ“¦&Æö6·Ğ¢çF'&FW¶föçB×6—¦S£Wƒ¶föçB×vV–v‡C£c¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“·v†—FR×76S¦æ÷w&Ğ¢çF'7V'¶föçB×6—¦S£Wƒ¶Æ–æRÖ†V–v‡C£ãCS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶Ö‚×v–GFƒ£#SW‡Ğ¢çF&†VG¶föçB×6—¦S£#'ƒ¶föçB×vV–v‡C£s¶ÆWGFW"×76–æs¢ÓãVÓ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’—Ğ¤ÖVF–†Ö‚×v–GFƒ£sc‚—²çG'W7F&æG·FF–æs£C‚‡ƒ¶Ö&v–â×F÷£3'‡ÒçF'F—FÆW¶Ö&v–âÖ&÷GFöÓ£'‡ÒçF&w&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3£g#¶Ö‚×v–GFƒ£CC‡ÒçF&6öÇ·FF–æs£#G‚gƒ¶Ö–âÖ†V–v‡C£ÒçF&F—g¶&÷&FW"ÖÆVgC¦æöæS¶&÷&FW"×F÷£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"—×Ğ¢æf6V2ç6V7GFÇ·FW‡BÖÆ–vã¦6VçFW'Ğ¢æfw&¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖã¶v£gƒ¶Ö&v–ã£#‡‚WFò¶Ö‚×v–GFƒ£scƒ·v–GFƒ£WĞ¢æf—FV×¶&÷&FW"×&F—W3£#Gƒ¶&6¶w&÷VæC¢6ffc¶÷fW&fÆ÷s¦†–FFVã¶&÷‚×6†F÷s£'‚‡‚&v&ƒ#"Ã#"Ã#"ÃãB’Ã‚3‚&v&ƒ#"Ã#"Ã#"ÃãR“·G&ç6—F–öã¦&÷‚×6†F÷rã'7Ğ¢æf—FVÓ¦†÷fW'¶&÷‚×6†F÷s£7‚‚&v&ƒ#"Ã#"Ã#"ÃãR’ÃG‚3g‚&v&ƒ#"Ã#"Ã#"Ããr—Ğ¢æf¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC§76RÖ&WGvVVã¶v£‡ƒ·v–GFƒ£S·FF–æs£#'‚#‡ƒ¶&6¶w&÷VæC¦æöæS¶&÷&FW#¦æöæS¶7W'6÷#§ö–çFW#·FW‡BÖÆ–vã¦ÆVgC¶föçBÖfÖ–Ç“§f"‚ÒÖöæg’ÖföçBÖ&öG’“¶föçB×6—¦S£‡ƒ¶föçB×vV–v‡C£s¶ÆWGFW"×76–æs¢ÓãVÓ¶Æ–æRÖ†V–v‡C£ã3S¶6öÆ÷#¢3ccgĞ¢æf6†Wg¶F—7Æ“¦fÆWƒ¶fÆWƒ¦æöæS¶6öÆ÷#¢3ccgĞ¢æfò¶Ö&v–ã£·FF–æs£#‡‚#gƒ¶föçB×6—¦S£gƒ¶Æ–æRÖ†V–v‡C£ãcS¶6öÆ÷#¢366cCc¶Ö‚×v–GFƒ£ƒƒ‡Ğ¢æ6ö×Æ–æ6W·FF–ær×F÷£3g‡Ğ¢æ6ö×æ÷FW¶F—7Æ“¦fÆWƒ¶v£wƒ¶Æ–vâÖ—FV×3¦fÆW‚×7F'C¶Ö‚×v–GFƒ£“#ƒ¶föçB×6—¦S£'ƒ¶Æ–æRÖ†V–v‡C£ãS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶Ö&v–ã£Ğ¢æ6ö×–6÷¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’“¶fÆWƒ¦æöæS¶Ö&v–â×F÷£Ğ¢ægG¶&6¶w&÷VæC§f"‚ÒÖöæg’Ö&r×FW'F–'’“¶Ö&v–â×F÷£3'ƒ¶&÷&FW"×F÷£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"×7V'FÆR—Ğ¢ægF–ç¶Ö‚×v–GFƒ£#ƒ¶Ö&v–ã£WFó·FF–æs£C‡‚#G‚#‡‡Ğ¢ægFw&–G¶F—7Æ“¦w&–C¶w&–B×FV×ÆFRÖ6öÇVÖç3£ãVg"g"g"g#¶v£3'‡Ğ¢ægF&÷WG¶föçB×6—¦S£Gƒ¶Æ–æRÖ†V–v‡C£ãc¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“¶Ö&v–ã£g‚¶Ö‚×v–GFƒ£#ƒ‡Ğ¢ægF6öÇ¶F—7Æ“¦fÆWƒ¶fÆW‚ÖF—&V7F–öã¦6öÇVÖã¶v£‡Ğ¢ægF‡¶föçB×vV–v‡C£s¶föçB×6—¦S£Wƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’“¶Ö&v–ã£G‡Ğ¢ægF6öÂ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’“·FW‡BÖFV6÷&F–öã¦æöæS¶föçB×6—¦S£G‡Ğ¢ægF6öÂ¦†÷fW'¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×&–Ö'’—Ğ¢ægF&'¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC§76RÖ&WGvVVã¶fÆW‚×w&§w&¶v£gƒ¶Ö&v–â×F÷£3'ƒ·FF–ær×F÷£#Gƒ¶&÷&FW"×F÷£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"×7V'FÆR—Ğ¢ægF6÷—¶föçB×6—¦S£7ƒ¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’—Ğ¢ægG—¶F—7Æ“¦fÆWƒ¶v£‡Ğ¢ç–6†—·v–GFƒ£Cgƒ¶†V–v‡C£3ƒ¶&÷&FW"×&F—W3£gƒ¶&÷&FW#£‚6öÆ–Bf"‚ÒÖöæg’Ö&÷&FW"“¶&6¶w&÷VæC¢6ffc¶F—7Æ“¦fÆWƒ¶Æ–vâÖ—FV×3¦6VçFW#¶§W7F–g’Ö6öçFVçC¦6VçFW#¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×6V6öæF'’—Ğ¤ÖVF–†Ö‚×v–GFƒ£“ƒ‚—°¢ç7F'Fw&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3§&WVBƒ"Ãg"—Ğ¢çG'W7G¶6öÇVÖâÖv£G‡Ğ¢çG'W7G¶F—7Æ“¦w&–C¶w&–B×FV×ÆFRÖ6öÇVÖç3§&WVBƒ"ÆÖ–æÖ‚ƒÃg"’“·&÷rÖv£Gƒ¶6öÇVÖâÖv£‡ÒçF6†—¶&÷&FW"ÖÆVgC¦æöæS·FF–æs£¶Æ–vâÖ—FV×3¦fÆW‚×7F'C¶Ö–â×v–GFƒ£ÒçFÆ&VÇ¶föçB×6—¦S£7ƒ¶Æ–æRÖ†V–v‡C£ã3S·v†—FR×76S¦æ÷&ÖÇĞ¢æWfw&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3§&WVBƒ"Ãg"—Ğ¢ægFw&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3£g"g#¶v£#G‡Ğ§Ğ¤ÖVF–†Ö‚×v–GFƒ£sc‚—°¢çw&·FF–æs£g‡Ğ¢æ†F–ç·FF–æs£‚gƒ¶v£'‡Ğ¢æ†Fæbæ†F7B7ç¶F—7Æ“¦æöæWĞ¢æ†FÆæw·FF–æs£‡‚ƒ¶föçB×6—¦S£7ƒ¶Ö&v–âÖÆVgC£Ğ¢ç6V&6‡¶÷&FW#£“¶fÆW‚Ö&6—3£S¶†V–v‡C£Cgƒ·FF–ærÖÆVgC£'ƒ·FF–ær×&–v‡C£gƒ¶Ö–â×v–GFƒ£Òç6V&6‚–çWG¶Ö–â×v–GFƒ£·FF–æs£‡Òæ†F–ç¶v£ƒ¶fÆW‚×w&§w&·FF–ærÖ&÷GFöÓ£'‡Òæ†F7G·FF–æs£G‚'‡Ğ¢ç6V&6†'Fç¶†V–v‡C£3‡ƒ·FF–æs£#ƒ¶föçB×6—¦S£G‡Ğ¢æ†W&÷¶w&–B×FV×ÆFRÖ6öÇVÖç3£g#¶v£#ƒ·FF–ær×F÷£‡‡Ğ¢æƒ¶föçB×6—¦S£3'‡Ğ¢ç7V'¶föçB×6—¦S£g‡Ğ¢æ†W&ö–Öw¶F—7Æ“¦æöæWĞ¢ç6V7·FF–ær×F÷£3G‡Ğ¢ç6V7GFÇ¶föçB×6—¦S£#‡Ğ¢ç7F'Fw&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3£g#¶v£'‡Ğ¢ç6–ÆÇW·v–GFƒ£s'ƒ¶†V–v‡C£s'‡Òç66''¶F—7Æ“¦fÆWƒ¶fÆWƒ¦æöæS¶6öÆ÷#§f"‚ÒÖöæg’×FW‡B×FW'F–'’—Ğ¢ç66&G·FF–æs£‡ƒ¶Ö–âÖ†V–v‡C£Ğ¢ç66Æ&VÇ¶föçB×6—¦S£g‡Ğ¢ç677V'¶Ö‚×v–GFƒ£WĞ¢æWfw&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3£g'Ğ¢ægFw&–G¶w&–B×FV×ÆFRÖ6öÇVÖç3£g"g'Ğ¢æöæÇ–FW6·¶F—7Æ“¦&Æö6·Ğ¢æöæÇ–Öö'¶F—7Æ“¦æöæWĞ¢ç6V7&–v‡Bæ'&÷v'Fç¶F—7Æ“¦æöæWĞ¢æ6†—7¶fÆW‚×w&¦æ÷w&¶÷fW&fÆ÷r×ƒ¦WFó·67&öÆÆ&"×v–GFƒ¦æöæS¶Ö&v–â×&–v‡C¢Ógƒ·FF–ær×&–v‡C£g‡Ğ¢æ6†—¶†V–v‡C£CG‡Ğ¢æ6†—3£¢×vV&¶—B×67&öÆÆ&'¶F—7Æ“¦æöæWĞ¢æÖf–ÇFW'¶F—7Æ“¦æöæWĞ¢æÖf–ÇFW#£¢×vV&¶—B×67&öÆÆ&'¶F—7Æ“¦æöæWĞ§Ğ

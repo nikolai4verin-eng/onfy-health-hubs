@@ -1,0 +1,107 @@
+/* ============================================================
+   Vitamins hub — additions on top of the extracted gut-hub CSS.
+   Product/set cards replicate the shipped Onfy ProductCarousel
+   look 1:1 (well + discount badge + white plus, price + UVP,
+   regular-weight name, grey unit line). No images: neutral glyphs.
+   ============================================================ */
+
+.hidden { display: none !important; }
+
+/* Wordmark (the bundle used the proprietary Onfy logo asset) */
+.wordmark { font-family: var(--onfy-font-body); font-weight: 800; font-size: 26px; letter-spacing: -0.03em; line-height: 1; }
+.wordmark.purple { color: var(--onfy-brand); }
+.wordmark.dark { color: var(--onfy-text-primary); }
+
+/* Hero without an image column */
+.hero.noimg { grid-template-columns: 1fr; }
+
+/* Prod menopause hero layout: trust chips live inside the left hero column,
+   the image stands to the right of headline+chips and matches their height.
+   Fixed narrow image column so all four chips fit on one line; image
+   right-aligned to the content edge like the prod lavender. */
+.hero { grid-template-columns: 1fr 240px; }
+.hero .heroimg { justify-content: flex-end; }
+.hero .heroimgpic { max-width: 220px; margin: 0; }
+.hero > .trust { grid-column: 1 / -1; margin-top: 34px; }
+
+/* Start-card illustration slot -> neutral placeholder */
+.sillu.ph {
+  border-radius: 16px;
+  background: var(--onfy-brand-softer);
+  border: 1px dashed var(--onfy-brand-border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--onfy-brand);
+}
+
+/* Goal-card clay icons: transparent webp, sized by the .sillu slot.
+   Prod menopause renders objects ~70px with air around them, not the full
+   114px gut slot — shrink the slot so icons stop dominating the card. */
+.sillu img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.sillu { width: 84px; height: 84px; }
+@media (max-width: 760px) { .sillu { width: 58px; height: 58px; } }
+
+/* ---- Product rail, prod-look cards ------------------------- */
+.prail { display: flex; gap: 20px; overflow-x: auto; padding: 22px 2px 10px; scroll-snap-type: x proximity; scrollbar-width: none; scroll-behavior: smooth; }
+.prail::-webkit-scrollbar { display: none; }
+.pcard { flex: 0 0 214px; scroll-snap-align: start; display: flex; flex-direction: column; font-family: var(--onfy-font-body); }
+.pcard.wide { flex-basis: 246px; }
+.pwell {
+  position: relative; width: 100%; aspect-ratio: 1 / 1; border-radius: 16px;
+  background: var(--onfy-bg-tertiary); color: var(--onfy-border-strong);
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+.pwell.lav { background: var(--onfy-brand-soft); color: var(--onfy-brand-border); }
+.pdisc {
+  position: absolute; top: 10px; left: 10px;
+  background: rgb(247, 239, 160); color: var(--onfy-text-primary);
+  border-radius: 999px; padding: 5px 11px;
+  font-size: 13px; font-weight: 600; line-height: 1.2; white-space: nowrap;
+}
+.pplus {
+  position: absolute; right: 10px; bottom: 10px;
+  width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer;
+  background: #fff; color: var(--onfy-text-primary);
+  box-shadow: 0 1px 4px rgba(22, 22, 22, 0.14);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--onfy-font-body); font-size: 24px; font-weight: 400; line-height: 1;
+  transition: background .15s, color .15s;
+}
+.pplus:hover { background: var(--onfy-bg-secondary); }
+.pplus.in { background: var(--onfy-brand); color: #fff; font-size: 18px; }
+.pinfo { display: flex; flex-direction: column; gap: 3px; padding-top: 12px; }
+.prow { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.prow b { font-size: 17px; font-weight: 700; color: var(--onfy-text-primary); letter-spacing: -0.01em; }
+.prow s { font-size: 13px; font-weight: 500; color: var(--onfy-text-disabled); }
+.pname { font-size: 15px; font-weight: 400; line-height: 1.35; color: var(--onfy-text-primary); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 40px; }
+.punit { font-size: 13px; color: var(--onfy-text-tertiary); }
+.pclass { font-size: 11.5px; color: var(--onfy-text-tertiary); }
+
+/* Evidence tier: third (limited) state, muted amber */
+.evtier.lim { background: rgb(255, 244, 229); color: rgb(176, 108, 0); }
+
+/* Regulatory pill: FSMP (bilanzierte Diät) — used in evidence block */
+.evpill.fsmp { background: rgb(255, 244, 229); color: rgb(176, 108, 0); }
+
+/* Article thumbs: 4 vitamins tints + glyph instead of the 3D object */
+.artthumb.t-d3   { background: linear-gradient(135deg, #f2edff, #ddd2ff); color: var(--onfy-brand); }
+.artthumb.t-mg   { background: linear-gradient(135deg, #eafaf1, #cdeedd); color: #0a7d4d; }
+.artthumb.t-imm  { background: linear-gradient(135deg, #fff4e5, #ffe3c2); color: #b06c00; }
+.artthumb.t-b12  { background: linear-gradient(135deg, #e8f4ff, #cfe7ff); color: #0a66c2; }
+.artthumb .glyph { opacity: .85; }
+
+/* Trusted Shops logo slot -> text badge */
+.tslogo-txt { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: var(--onfy-text-primary); }
+.tslogo-txt .tsdot { width: 22px; height: 22px; border-radius: 50%; background: var(--onfy-star); color: #fff; display: flex; align-items: center; justify-content: center; }
+
+/* FAQ answer (static build) */
+.faqaO { padding: 0 28px 24px; }
+.faqaO p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--onfy-text-secondary); max-width: 72ch; }
+.faqchev .svgi { transition: transform .18s ease; }
+.faqitem.open .faqchev .svgi { transform: rotate(180deg); }
+
+@media (max-width: 720px) {
+  .pcard { flex-basis: 172px; }
+  .pcard.wide { flex-basis: 208px; }
+  .prail { gap: 14px; }
+  .wordmark { font-size: 22px; }
+}
