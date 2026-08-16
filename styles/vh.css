@@ -15,14 +15,33 @@
 /* Hero without an image column */
 .hero.noimg { grid-template-columns: 1fr; }
 
-/* Prod menopause hero layout: trust chips live inside the left hero column,
-   the image stands to the right of headline+chips and matches their height.
-   Fixed narrow image column so all four chips fit on one line; image
-   right-aligned to the content edge like the prod lavender. */
-.hero { grid-template-columns: 1fr 240px; }
-.hero .heroimg { justify-content: flex-end; }
-.hero .heroimgpic { max-width: 220px; margin: 0; }
-.hero > .trust { grid-column: 1 / -1; margin-top: 34px; }
+/* Wide editorial hero: the photo gets a real panel instead of a small object. */
+.hero { grid-template-columns: minmax(0, 1.03fr) minmax(420px, .97fr); gap: 44px; }
+.hero .heroimg {
+  width: 100%;
+  aspect-ratio: 1.49 / 1;
+  overflow: hidden;
+  border-radius: 24px;
+  justify-content: stretch;
+}
+.hero .heroimgpic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: normal;
+}
+.hero > .trust { grid-column: 1 / -1; margin-top: 28px; }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; gap: 22px; }
+  .hero .heroimg { display: block; order: 2; aspect-ratio: 1.5 / 1; }
+  .hero .heroimgpic { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .hero > .trust { order: 3; margin-top: 4px; }
+}
 
 /* Start-card illustration slot -> neutral placeholder */
 .sillu.ph {
