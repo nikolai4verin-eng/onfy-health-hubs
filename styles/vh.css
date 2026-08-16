@@ -96,6 +96,7 @@
   .hero > .trust .tlabel { font-size: 12px; line-height: 1.25; white-space: nowrap; }
   .hero + .sec { padding-top: 20px; }
   .hero + .sec .secright { display: none; }
+  .hero + .sec .clearbtn { display: none !important; }
   .hero + .sec .secttl { font-size: 20px; line-height: 1.2; white-space: nowrap; }
 }
 
