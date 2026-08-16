@@ -70,9 +70,22 @@
   .hero .herotext { width: 100%; min-height: 0; order: 2; }
   .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; display: block; order: 1; aspect-ratio: 2.5 / 1; }
   .hero .heroimg::after { display: none; }
-  .hero .heroimgpic { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 76% 30%; }
+  .hero .heroimgpic { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 76% 47%; }
   .hero .h1 { font-size: 25px; line-height: 1.12; letter-spacing: -0.025em; }
-  .hero > .trust { order: 3; margin-top: 4px; }
+  .hero > .trust {
+    order: 3;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 4px;
+    padding: 2px 0 6px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .hero > .trust::-webkit-scrollbar { display: none; }
+  .hero > .trust .tchip { flex: 0 0 auto; padding: 0 12px 0 0; align-items: center; scroll-snap-align: start; }
+  .hero > .trust .tlabel { font-size: 12px; line-height: 1.25; white-space: nowrap; }
 }
 
 /* Start-card illustration slot -> neutral placeholder */
