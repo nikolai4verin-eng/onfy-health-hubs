@@ -84,7 +84,15 @@
     scrollbar-width: none;
   }
   .hero > .trust::-webkit-scrollbar { display: none; }
-  .hero > .trust .tchip { flex: 0 0 auto; padding: 0 12px 0 0; align-items: center; scroll-snap-align: start; }
+  .hero > .trust .tchip {
+    flex: 0 0 auto;
+    padding: 7px 11px;
+    align-items: center;
+    border: 1px solid var(--onfy-border);
+    border-radius: 999px;
+    background: #fff;
+    scroll-snap-align: start;
+  }
   .hero > .trust .tlabel { font-size: 12px; line-height: 1.25; white-space: nowrap; }
 }
 
@@ -152,6 +160,7 @@
 .artthumb.t-imm  { background: linear-gradient(135deg, #fff4e5, #ffe3c2); color: #b06c00; }
 .artthumb.t-b12  { background: linear-gradient(135deg, #e8f4ff, #cfe7ff); color: #0a66c2; }
 .artthumb .glyph { opacity: .85; }
+.artthumb.hasphoto img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* Trusted Shops logo slot -> text badge */
 .tslogo-txt { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: var(--onfy-text-primary); }
