@@ -15,14 +15,43 @@
 /* Hero without an image column */
 .hero.noimg { grid-template-columns: 1fr; }
 
-/* Wide editorial hero: the photo gets a real panel instead of a small object. */
-.hero { grid-template-columns: minmax(0, 1.03fr) minmax(420px, .97fr); gap: 44px; }
+/* Wide editorial hero: the image begins around the middle and softly fades
+   into the copy instead of reading as a small separate card. */
+.hero {
+  position: relative;
+  display: block;
+  min-height: 454px;
+  padding-top: 0;
+}
+.hero .herotext {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(50%, 610px);
+  min-height: 400px;
+}
 .hero .heroimg {
-  width: 100%;
-  aspect-ratio: 1.49 / 1;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 0;
+  width: 62%;
+  height: 400px;
+  aspect-ratio: auto;
   overflow: hidden;
-  border-radius: 24px;
-  justify-content: stretch;
+  border-radius: 16px;
+  display: block;
+}
+.hero .heroimg::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0 auto 0 0;
+  width: 48%;
+  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.96) 34%, rgba(255,255,255,.5) 72%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
 }
 .hero .heroimgpic {
   display: block;
@@ -34,11 +63,13 @@
   object-position: center;
   mix-blend-mode: normal;
 }
-.hero > .trust { grid-column: 1 / -1; margin-top: 28px; }
+.hero > .trust { position: relative; z-index: 2; margin-top: 4px; }
 
 @media (max-width: 760px) {
-  .hero { grid-template-columns: 1fr; gap: 22px; }
-  .hero .heroimg { display: block; order: 2; aspect-ratio: 1.5 / 1; }
+  .hero { display: grid; grid-template-columns: 1fr; gap: 22px; min-height: 0; padding-top: 18px; }
+  .hero .herotext { width: 100%; min-height: 0; }
+  .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; display: block; order: 2; aspect-ratio: 1.5 / 1; }
+  .hero .heroimg::after { width: 34%; }
   .hero .heroimgpic { display: block; width: 100%; height: 100%; object-fit: cover; }
   .hero > .trust { order: 3; margin-top: 4px; }
 }
