@@ -16,42 +16,52 @@
 /* Hero without an image column */
 .hero.noimg { grid-template-columns: 1fr; }
 
-/* Wide editorial hero: the image begins around the middle and softly fades
-   into the copy instead of reading as a small separate card. */
+/* Full-width editorial hero.  The asset is never cropped: it is aligned to
+   the right inside the slide, while the left-hand reading area is created by
+   an adjustable CSS wash rather than by permanently editing the photo. */
 .hero {
+  --hero-height: 380px;
+  --hero-wash-solid: 52%;
+  --hero-wash-end: 76%;
   position: relative;
   display: block;
-  min-height: 428px;
+  min-height: 434px;
   padding-top: 0;
 }
 .hero .herotext {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: min(50%, 610px);
-  min-height: 374px;
+  min-height: var(--hero-height);
+  padding-left: 34px;
 }
 .hero .heroimg {
   position: absolute;
   z-index: 1;
-  top: 8px;
+  top: 0;
   right: 0;
-  width: 62%;
-  height: 374px;
+  width: 100%;
+  height: var(--hero-height);
   aspect-ratio: auto;
   overflow: hidden;
   border-radius: 16px;
+  background: #fff;
   display: block;
 }
 .hero .heroimg::after {
   content: "";
   position: absolute;
   z-index: 1;
-  inset: 0 auto 0 0;
-  width: 48%;
-  background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.96) 34%, rgba(255,255,255,.5) 72%, rgba(255,255,255,0) 100%);
+  inset: 0;
+  background: linear-gradient(90deg,
+    #fff 0%,
+    rgba(255,255,255,.98) 34%,
+    rgba(255,255,255,.88) var(--hero-wash-solid),
+    rgba(255,255,255,.38) 64%,
+    rgba(255,255,255,0) var(--hero-wash-end));
   pointer-events: none;
 }
 .hero .heroimgpic {
@@ -68,10 +78,10 @@
 
 @media (max-width: 760px) {
   .hero { display: grid; grid-template-columns: 1fr; gap: 22px; min-height: 0; padding-top: 18px; }
-  .hero .herotext { width: 100%; min-height: 0; order: 2; }
-  .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; display: block; order: 1; aspect-ratio: 2.5 / 1; }
+  .hero .herotext { width: 100%; min-height: 0; padding-left: 0; order: 2; }
+  .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; display: block; order: 1; aspect-ratio: auto; }
   .hero .heroimg::after { display: none; }
-  .hero .heroimgpic { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 76% 47%; }
+  .hero .heroimgpic { display: block; width: 100%; max-width: none; height: auto; margin: 0; object-fit: contain; object-position: center; }
   .hero .h1 { font-size: 25px; line-height: 1.12; letter-spacing: -0.025em; }
   .hero > .trust {
     order: 3;
