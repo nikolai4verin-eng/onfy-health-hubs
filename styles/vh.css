@@ -139,8 +139,9 @@
 .menopause-hub .hero + .sec { padding-top: 48px; }
 .menopause-hub .secttl { font-size: 24px; line-height: 32px; }
 .menopause-hub .secsub { font-size: 15px; line-height: 20px; margin-top: 6px; }
-.menopause-hub .startgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-top: 0; margin-top: 28px; }
-.menopause-hub .scard { min-height: 144px; padding: 20px 24px; gap: 16px; border-radius: 18px; }
+.menopause-hub .hero + .sec .sechead > div { flex: 1; }
+.menopause-hub .startgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-top: 0; margin-top: 34px; }
+.menopause-hub .scard { min-height: 144px; padding: 20px 26px; gap: 16px; border-radius: 18px; }
 .menopause-hub .sctext { gap: 6px; }
 .menopause-hub .sclabel { font-size: 17px; line-height: 24px; }
 .menopause-hub .scsub { margin-top: 0; font-size: 15px; line-height: 20px; }
