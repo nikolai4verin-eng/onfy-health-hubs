@@ -169,11 +169,13 @@
   .menopause-hub .search input { font-size: 15px; }
   .menopause-hub .searchbtn { height: 38px; min-width: 0; padding: 0 20px; font-size: 14px; }
   .menopause-hub .categorynav { display: none; }
-  .menopause-hub .hero { height: auto; min-height: 0; padding-top: 18px; margin-top: 0; }
-  .menopause-hub .hero .herotext { width: 100%; padding-left: 0; }
-  .menopause-hub .hero .heroimg { top: auto; }
-  .menopause-hub .hero .h1 { font-size: 25px; line-height: 1.12; }
-  .menopause-hub .hero > .trust { margin-top: 4px; }
+  .menopause-hub .hero { display: grid; grid-template-columns: 1fr; gap: 22px; height: auto; min-height: 0; padding-top: 18px; margin-top: 0; }
+  .menopause-hub .hero .herotext { width: 100%; min-height: 0; padding-left: 0; order: 2; }
+  .menopause-hub .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; order: 1; }
+  .menopause-hub .hero .h1 { font-size: 25px; line-height: 1.12; letter-spacing: -0.02em; }
+  .menopause-hub .hero > .trust { order: 3; height: auto; margin-top: 4px; padding: 2px 0 6px; gap: 10px; }
+  .menopause-hub .hero > .trust .tchip,
+  .menopause-hub .hero > .trust .tcf { padding: 7px 11px; }
   .menopause-hub .hero + .sec { padding-top: 20px; }
   .menopause-hub .startgrid { grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
   .menopause-hub .scard { min-height: 0; padding: 18px; }
@@ -210,6 +212,7 @@
   .hero + .sec .secright { display: none; }
   .hero + .sec .clearbtn { display: none !important; }
   .hero + .sec .secttl { font-size: 20px; line-height: 1.2; white-space: nowrap; }
+  .menopause-hub .hero + .sec .secttl { white-space: normal; }
 }
 
 /* Start-card illustration slot -> neutral placeholder */
