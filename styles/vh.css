@@ -15,7 +15,7 @@
 
 /* Menopause hub: measured against the live storefront at the same viewport. */
 .menopause-hub {
-  font-family: var(--onfy-font-body);
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: var(--onfy-text-primary);
   overflow-x: clip;
 }
@@ -36,9 +36,9 @@
   border: 1.5px solid var(--onfy-brand);
 }
 .menopause-hub .search input { font-size: 16px; padding-left: 14px; }
-.menopause-hub .searchbtn { height: 52px; min-width: 106px; padding: 0 24px; font-size: 16px; }
+.menopause-hub .searchbtn { height: 52px; min-width: 106px; padding: 0 24px; font-size: 16px; line-height: 26px; }
 .menopause-hub .hdnav { gap: 28px; }
-.menopause-hub .hdact { min-width: 52px; height: 50px; padding: 0; gap: 4px; font-size: 14px; font-weight: 400; }
+.menopause-hub .hdact { min-width: 52px; height: 50px; padding: 0; gap: 4px; font-size: 14px; line-height: 22px; font-weight: 400; }
 .menopause-hub .categorynav {
   position: absolute;
   z-index: 3;
@@ -59,7 +59,8 @@
   color: var(--onfy-text-primary);
   text-decoration: none;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 400;
 }
 .menopause-hub .categorynav a:hover { color: var(--onfy-brand); }
@@ -128,7 +129,7 @@
 .hero > .trust { position: relative; z-index: 2; margin-top: 28px; }
 .menopause-hub .hero { --hero-height: 380px; min-height: 428px; height: 428px; padding-top: 0; margin-top: 68px; }
 .menopause-hub .hero .herotext { width: 50%; min-height: 380px; padding-left: 0; }
-.menopause-hub .hero .h1 { max-width: none; font-size: 44px; line-height: 48px; letter-spacing: -0.025em; }
+.menopause-hub .hero .h1 { max-width: none; font-size: 44px; line-height: 48px; letter-spacing: -0.02em; }
 .menopause-hub .hero .heroimg { top: 0; }
 .menopause-hub .hero .micro { margin-top: 12px; font-size: 15px; line-height: 20px; }
 .menopause-hub .hero .micro .dot { background: var(--onfy-brand); }
@@ -137,13 +138,13 @@
 .menopause-hub .hero > .trust .tcf { padding-left: 0; }
 .menopause-hub .hero > .trust .tlabel { font-size: 13px; line-height: 18px; }
 .menopause-hub .hero + .sec { padding-top: 48px; }
-.menopause-hub .secttl { font-size: 24px; line-height: 32px; }
-.menopause-hub .secsub { font-size: 15px; line-height: 20px; margin-top: 6px; }
+.menopause-hub .secttl { font-size: 24px; line-height: 32px; letter-spacing: normal; }
+.menopause-hub .secsub { font-size: 16px; line-height: 26px; margin-top: 6px; }
 .menopause-hub .hero + .sec .sechead > div { flex: 1; }
-.menopause-hub .startgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-top: 0; margin-top: 34px; }
+.menopause-hub .startgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-top: 0; margin-top: 28px; }
 .menopause-hub .scard { min-height: 144px; padding: 20px 26px; gap: 16px; border-radius: 18px; }
 .menopause-hub .sctext { gap: 6px; }
-.menopause-hub .sclabel { font-size: 17px; line-height: 24px; }
+.menopause-hub .sclabel { font-size: 17px; line-height: 24px; letter-spacing: normal; }
 .menopause-hub .scsub { margin-top: 0; font-size: 15px; line-height: 20px; }
 .menopause-hub .sillu { width: 100px; height: 100px; }
 
@@ -286,6 +287,40 @@
 .faqaO p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--onfy-text-secondary); max-width: 72ch; }
 .faqchev .svgi { transition: transform .18s ease; }
 .faqitem.open .faqchev .svgi { transform: rotate(180deg); }
+
+/* Menopause typography: measured from the live hub at desktop width. */
+@media (min-width: 761px) {
+  .menopause-hub .chip { font-size: 14px; line-height: 22px; }
+
+  .menopause-hub .pdisc { font-size: 12px; line-height: 18px; font-weight: 400; }
+  .menopause-hub .prow b { font-size: 14px; line-height: 22px; font-weight: 700; letter-spacing: normal; }
+  .menopause-hub .prow s { font-size: 10px; line-height: 12px; font-weight: 400; }
+  .menopause-hub .pname { font-size: 12px; line-height: 18px; font-weight: 400; min-height: 36px; }
+  .menopause-hub .punit,
+  .menopause-hub .pclass { font-size: 12px; line-height: 18px; font-weight: 400; }
+
+  .menopause-hub .evintro { font-size: 16px; line-height: 26px; font-weight: 400; }
+  .menopause-hub .evpill,
+  .menopause-hub .evtier { font-size: 11px; line-height: 13px; font-weight: 500; }
+  .menopause-hub .evname { font-size: 20px; line-height: 32px; font-weight: 700; letter-spacing: -0.02em; }
+  .menopause-hub .evdesc { font-size: 16px; line-height: 26px; font-weight: 400; }
+  .menopause-hub .evtag { font-size: 11px; line-height: 13px; font-weight: 700; }
+
+  .menopause-hub .artmeta { font-size: 12px; line-height: 18px; font-weight: 400; }
+  .menopause-hub .arttitle { font-size: 16px; line-height: 22.4px; font-weight: 700; }
+  .menopause-hub .artread { font-size: 15px; line-height: 20px; font-weight: 700; }
+
+  .menopause-hub .tbhead { font-size: 20px; line-height: 32px; font-weight: 700; letter-spacing: normal; }
+  .menopause-hub .tbsub { font-size: 14px; line-height: 22px; font-weight: 400; }
+
+  .menopause-hub .faqq { font-size: 16px; line-height: 26px; font-weight: 700; letter-spacing: normal; }
+  .menopause-hub .faqaO p { font-size: 16px; line-height: 24px; font-weight: 300; }
+
+  .menopause-hub .fth { font-size: 14px; line-height: 22px; font-weight: 700; }
+  .menopause-hub .ftcol a,
+  .menopause-hub .ftabout { font-size: 14px; line-height: 22px; font-weight: 400; }
+  .menopause-hub .ftcopy { font-size: 12px; line-height: 18px; font-weight: 400; }
+}
 
 @media (max-width: 720px) {
   .pcard { flex-basis: 172px; }
