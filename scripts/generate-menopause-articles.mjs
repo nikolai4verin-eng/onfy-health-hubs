@@ -223,7 +223,7 @@ function render(article) {
   <meta name="robots" content="noindex">
   <title>${escapeHtml(article.title)} · Onfy</title>
   <meta name="description" content="${escapeHtml(article.lead)}">
-  <link rel="icon" href="assets/favicon.png?v=rounded-1">
+  <link rel="icon" type="image/png" href="assets/favicon-work.png?v=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
