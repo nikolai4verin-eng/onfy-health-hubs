@@ -28,15 +28,15 @@ const articles = [
       <h2>Wie häufig und wie lange?</h2>
       <p>Die Intensität reicht von kaum wahrnehmbaren Wärmegefühlen bis zu Beschwerden, die Schlaf und Alltag deutlich beeinträchtigen. Auch die Dauer ist sehr verschieden: Bei manchen Frauen verschwinden Wallungen nach kurzer Zeit, bei anderen begleiten sie die Übergangsphase über mehrere Jahre.</p>
       <h2>Was im Alltag helfen kann</h2>
-      <ul>
+      <ul class="article-tip-grid">
         <li><strong>Schichten tragen:</strong> Leichte, atmungsaktive Kleidung lässt sich schnell anpassen.</li>
         <li><strong>Schlafzimmer kühl halten:</strong> Luftige Bettwäsche und ein Glas Wasser am Bett helfen besonders bei Nachtschweiß.</li>
         <li><strong>Auslöser beobachten:</strong> Alkohol, scharfe Speisen, Koffein und Stress können Beschwerden verstärken.</li>
         <li><strong>Regelmäßig bewegen:</strong> Bewegung unterstützt Wohlbefinden, Schlaf und Gewicht – auch wenn sie Wallungen nicht bei jeder Frau direkt reduziert.</li>
         <li><strong>Behandlung besprechen:</strong> Wenn Beschwerden stark sind, lohnt sich ein ärztliches Gespräch über hormonelle und nicht-hormonelle Möglichkeiten.</li>
       </ul>
-      <aside class="article-callout"><h3>Ehrlich eingeordnet</h3><p>Die Hormonersatztherapie gilt als wirksamste medikamentöse Behandlung gegen Hitzewallungen. Ob sie individuell geeignet ist, hängt von Vorerkrankungen, Risiken und persönlichen Wünschen ab. Pflanzliche oder rezeptfreie Produkte sind kein gleichwertiger Ersatz für jede Situation.</p></aside>
-      <aside class="article-callout"><h3>Diese Warnzeichen gehören ärztlich abgeklärt</h3><ul><li>Nachtschweiß zusammen mit Fieber, Gewichtsverlust oder geschwollenen Lymphknoten.</li><li>Sehr plötzliche oder ungewöhnlich starke Beschwerden.</li><li>Wallungen, die Schlaf und Alltag dauerhaft stark beeinträchtigen.</li></ul></aside>
+      <aside class="article-callout article-callout--note"><h3>Ehrlich gesagt: Das Wirksamste ist die Hormontherapie</h3><p>Die Hormonersatztherapie gilt als wirksamste medikamentöse Behandlung gegen Hitzewallungen. Ob sie individuell geeignet ist, hängt von Vorerkrankungen, Risiken und persönlichen Wünschen ab. Pflanzliche oder rezeptfreie Produkte sind kein gleichwertiger Ersatz für jede Situation.</p></aside>
+      <aside class="article-callout article-callout--warning"><h3>Diese Warnzeichen gehören ärztlich abgeklärt</h3><ul><li>Nachtschweiß zusammen mit Fieber, Gewichtsverlust oder geschwollenen Lymphknoten.</li><li>Sehr plötzliche oder ungewöhnlich starke Beschwerden.</li><li>Wallungen, die Schlaf und Alltag dauerhaft stark beeinträchtigen.</li></ul></aside>
     `,
     sources: [
       ['Wohlbefinden in den Wechseljahren, IQWiG', 'https://www.gesundheitsinformation.de/wohlbefinden-in-den-wechseljahren.html'],
@@ -65,7 +65,7 @@ const articles = [
       <p>Progesteron und Östrogen verändern sich in der Perimenopause. Gleichzeitig können Hitzewallungen aus dem Schlaf reißen. Dazu kommen Belastungen des Alltags, eine empfindlichere Stressreaktion und manchmal ein neues Gefühl innerer Unruhe. Schlechter Schlaf und Anspannung verstärken sich dann gegenseitig.</p>
       <p>Auch Herzklopfen kann nachts stärker auffallen. Es kann zwar in dieser Lebensphase auftreten, sollte aber nicht automatisch den Hormonen zugeschrieben werden.</p>
       <h2>Was im Alltag hilft</h2>
-      <ul>
+      <ul class="article-tip-grid">
         <li>Feste Schlaf- und Aufstehzeiten – möglichst auch am Wochenende.</li>
         <li>Ein kühles, dunkles Schlafzimmer und atmungsaktive Bettwäsche.</li>
         <li>Abends weniger Alkohol und Koffein; Bildschirme rechtzeitig zur Seite legen.</li>
@@ -74,8 +74,8 @@ const articles = [
       </ul>
       <h2>Wenn Schlafhygiene allein nicht reicht</h2>
       <p>Bei hartnäckigen Ein- und Durchschlafstörungen empfehlen Leitlinien die kognitive Verhaltenstherapie für Insomnie. Sie arbeitet unter anderem mit Schlafrhythmus, hilfreichen Gewohnheiten und dem Umgang mit nächtlichem Wachliegen. Sie kann als Einzel-, Gruppen- oder digitales Programm angeboten werden.</p>
-      <aside class="article-callout"><h3>Wichtig zur Einordnung</h3><p>Magnesium ist kein Schlafmittel. Nahrungsergänzungsmittel können einen nachgewiesenen Mangel ausgleichen, ersetzen aber keine Abklärung anhaltender Schlafprobleme.</p></aside>
-      <aside class="article-callout"><h3>Wann ärztlich abklären?</h3><ul><li>Plötzliches, wiederkehrendes oder anhaltendes Herzrasen.</li><li>Herzrasen mit Brustschmerz, Atemnot oder drohender Ohnmacht – das kann ein Notfall sein.</li><li>Schlafprobleme an mindestens drei Nächten pro Woche über mehrere Monate.</li><li>Ausgeprägte Angst oder anhaltend gedrückte Stimmung.</li></ul></aside>
+      <aside class="article-callout article-callout--note"><h3>Wichtig zur Einordnung</h3><p>Magnesium ist kein Schlafmittel. Nahrungsergänzungsmittel können einen nachgewiesenen Mangel ausgleichen, ersetzen aber keine Abklärung anhaltender Schlafprobleme.</p></aside>
+      <aside class="article-callout article-callout--warning"><h3>Wann ärztlich abklären?</h3><ul><li>Plötzliches, wiederkehrendes oder anhaltendes Herzrasen.</li><li>Herzrasen mit Brustschmerz, Atemnot oder drohender Ohnmacht – das kann ein Notfall sein.</li><li>Schlafprobleme an mindestens drei Nächten pro Woche über mehrere Monate.</li><li>Ausgeprägte Angst oder anhaltend gedrückte Stimmung.</li></ul></aside>
     `,
     sources: [
       ['S3-Leitlinie Insomnie bei Erwachsenen, AWMF 063-003', 'https://register.awmf.org/de/leitlinien/detail/063-003'],
@@ -102,19 +102,19 @@ const articles = [
     body: `
       <h2>Was Östrogen mit den Gelenken zu tun hat</h2>
       <p>Östrogen wirkt an vielen Stellen des Bewegungsapparats. Sinkt der Spiegel, können sich Kollagen, Knorpel, Gelenkflüssigkeit und Entzündungsbereitschaft verändern. Beschwerden sind oft diffus und können wandern. Besonders häufig werden Finger, Hände, Schultern und Knie genannt.</p>
-      <aside class="article-callout"><h3>Wichtig zur Einordnung</h3><p>Nicht jeder Schmerz in der Lebensmitte ist hormonell bedingt. Verschleiß, entzündlich-rheumatische Erkrankungen, Verletzungen oder andere Ursachen müssen mitgedacht werden.</p></aside>
+      <aside class="article-callout article-callout--note"><h3>Wichtig zur Einordnung</h3><p>Nicht jeder Schmerz in der Lebensmitte ist hormonell bedingt. Verschleiß, entzündlich-rheumatische Erkrankungen, Verletzungen oder andere Ursachen müssen mitgedacht werden.</p></aside>
       <h3>Frozen Shoulder – die schmerzhafte Schultersteife</h3>
       <p>Eine zunehmend steife und schmerzhafte Schulter tritt besonders häufig zwischen 40 und 60 Jahren auf. Beobachtungsdaten deuten auf einen Zusammenhang mit Östrogen hin, beweisen ihn aber nicht. Anhaltende Schulterbeschwerden gehören deshalb in ärztliche oder physiotherapeutische Hände.</p>
       <h2>Knochen mitdenken</h2>
       <p>Mit dem Östrogenmangel beschleunigt sich auch der Knochenabbau. Muskeln, Gelenke und Knochen sollten deshalb zusammen betrachtet werden. Belastende Bewegung, ausreichend Eiweiß und eine bedarfsgerechte Versorgung mit Calcium und Vitamin D unterstützen den Bewegungsapparat.</p>
       <h2>Was im Alltag am meisten hilft</h2>
-      <ul>
+      <ul class="article-tip-grid">
         <li><strong>Krafttraining:</strong> Stärkere Muskeln stabilisieren Gelenke und setzen wichtige Reize für die Knochen.</li>
         <li><strong>Regelmäßige Mobilität:</strong> Sanfte Bewegung, Yoga oder Pilates können Beweglichkeit erhalten.</li>
         <li><strong>Belastung dosieren:</strong> Nicht komplett schonen, sondern schrittweise und regelmäßig aktiv bleiben.</li>
         <li><strong>Gewicht im Blick behalten:</strong> Weniger Last kann tragende Gelenke entlasten.</li>
       </ul>
-      <aside class="article-callout"><h3>Diese Warnzeichen gehören ärztlich abgeklärt</h3><ul><li>Ein einzelnes heißes, gerötetes oder stark geschwollenes Gelenk.</li><li>Morgensteifigkeit über 30 bis 60 Minuten, besonders bei symmetrischen Schwellungen.</li><li>Fieber, Gewichtsverlust, Taubheitsgefühle oder zunehmende Schmerzen.</li><li>Beschwerden, die nach mehreren Wochen nicht besser werden.</li></ul></aside>
+      <aside class="article-callout article-callout--warning"><h3>Diese Warnzeichen gehören ärztlich abgeklärt</h3><ul><li>Ein einzelnes heißes, gerötetes oder stark geschwollenes Gelenk.</li><li>Morgensteifigkeit über 30 bis 60 Minuten, besonders bei symmetrischen Schwellungen.</li><li>Fieber, Gewichtsverlust, Taubheitsgefühle oder zunehmende Schmerzen.</li><li>Beschwerden, die nach mehreren Wochen nicht besser werden.</li></ul></aside>
     `,
     sources: [
       ['The musculoskeletal syndrome of menopause, Climacteric 2024', 'https://www.tandfonline.com/doi/full/10.1080/13697137.2024.2380363'],
@@ -146,7 +146,7 @@ const articles = [
       <h2>Was im Körper passiert</h2>
       <p>In der frühen Perimenopause arbeiten die Eierstöcke unregelmäßiger. Progesteron sinkt häufig zuerst, während Östrogen stark schwanken kann. Das Ergebnis ist kein gleichmäßiger Abstieg, sondern ein Auf und Ab – und damit auch wechselnde Beschwerden.</p>
       <h2>Die ersten Anzeichen</h2>
-      <ul>
+      <ul class="article-tip-grid">
         <li><strong>Zyklus:</strong> kürzere, längere oder unregelmäßige Abstände; teils stärkere Blutungen.</li>
         <li><strong>Schlaf:</strong> schlechter ein- oder durchschlafen, auch ohne ausgeprägte Hitzewallungen.</li>
         <li><strong>Stimmung und Energie:</strong> Reizbarkeit, Schwankungen oder geringere Belastbarkeit.</li>
@@ -154,7 +154,7 @@ const articles = [
       </ul>
       <h2>Warum ein einzelner Bluttest selten weiterhilft</h2>
       <p>FSH und andere Hormone können in dieser Phase von Tag zu Tag stark schwanken. Deshalb wird die Perimenopause ab etwa 45 Jahren meist anhand von Beschwerden und Zyklusverlauf eingeordnet. Bei jüngeren Frauen oder besonderen Fragestellungen kann eine Laboruntersuchung sinnvoll sein – die Entscheidung trifft die Ärztin oder der Arzt.</p>
-      <aside class="article-callout"><h3>Diese Blutungen bitte abklären lassen</h3><ul><li>Jede Blutung nach zwölf Monaten ohne Periode.</li><li>Sehr starke oder ungewöhnlich lange Blutungen.</li><li>Blutungen zwischen den Perioden oder nach dem Geschlechtsverkehr.</li><li>Beschwerden vor dem 40. Lebensjahr, die zu einer vorzeitigen Menopause passen könnten.</li></ul></aside>
+      <aside class="article-callout article-callout--warning"><h3>Diese Blutungen bitte abklären lassen</h3><ul><li>Jede Blutung nach zwölf Monaten ohne Periode.</li><li>Sehr starke oder ungewöhnlich lange Blutungen.</li><li>Blutungen zwischen den Perioden oder nach dem Geschlechtsverkehr.</li><li>Beschwerden vor dem 40. Lebensjahr, die zu einer vorzeitigen Menopause passen könnten.</li></ul></aside>
     `,
     sources: [
       ['S3-Leitlinie Peri- und Postmenopause, AWMF 015-062', 'https://register.awmf.org/de/leitlinien/detail/015-062'],
@@ -203,14 +203,6 @@ function footer() {
 </footer>`;
 }
 
-function related(current) {
-  return articles.filter((item) => item.slug !== current.slug).slice(0, 3).map((item) => `
-    <a class="article-related-card" href="blog/${item.slug}/">
-      <img src="${item.image}" alt="${escapeHtml(item.alt)}">
-      <span>${escapeHtml(item.title)}</span>
-    </a>`).join('');
-}
-
 function render(article) {
   const summary = article.summary.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
   const sources = article.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a></li>`).join('');
@@ -229,37 +221,40 @@ function render(article) {
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/onfy.css">
   <link rel="stylesheet" href="styles/vh.css">
-  <link rel="stylesheet" href="styles/article.css?v=1">
+  <link rel="stylesheet" href="styles/article.css?v=2">
 </head>
 <body class="article-page">
 ${header()}
-<div class="article-breadcrumb"><a href="wechseljahre/">Wechseljahre</a><span>›</span><strong>${escapeHtml(article.title)}</strong></div>
 <main>
+  <section class="article-hero-stage">
+    <figure class="article-hero-media"><img src="${article.image}" alt="${escapeHtml(article.alt)}"></figure>
+    <div class="article-hero-wash" aria-hidden="true"></div>
+    <div class="article-hero-inner">
+      <div class="article-hero-copy">
+        <p class="article-kicker">Artikel · ${escapeHtml(article.category)}</p>
+        <h1 class="article-title">${escapeHtml(article.title)}</h1>
+        <p class="article-lede">${escapeHtml(article.lead)}</p>
+        <ul class="article-meta"><li>Lesezeit ca. ${article.minutes} Minuten</li><li>Aktualisiert Juni 2026</li><li>Auf Basis öffentlich zugänglicher medizinischer Leitlinien</li></ul>
+      </div>
+    </div>
+  </section>
   <article class="article-shell">
-    <p class="article-kicker">Artikel · ${escapeHtml(article.category)}</p>
-    <h1 class="article-title">${escapeHtml(article.title)}</h1>
-    <p class="article-lede">${escapeHtml(article.lead)}</p>
-    <ul class="article-meta"><li>Lesezeit ca. ${article.minutes} Minuten</li><li>Aktualisiert Juni 2026</li><li>Auf Basis medizinischer Leitlinien</li></ul>
-    <figure class="article-hero"><img src="${article.image}" alt="${escapeHtml(article.alt)}"></figure>
     <div class="article-copy">
       <p>${escapeHtml(article.intro)}</p>
       <aside class="article-summary"><h2>Auf einen Blick</h2><ul>${summary}</ul></aside>
       ${article.body}
       <section class="article-next">
-        <p class="eyebrow">Nächster Schritt</p>
-        <h2>Was belastet Sie am meisten?</h2>
-        <p>Wählen Sie Ihr Symptom und vergleichen Sie rezeptfreie Mittel mit Preisen aus über 25 Apotheken.</p>
-        <div class="article-symptoms"><span>Hitzewallungen & Nachtschweiß</span><span>Schlafprobleme</span><span>Stimmung & Unruhe</span><span>Trockenheit & Intimität</span><span>Zyklusveränderungen</span></div>
-        <a class="article-cta" href="wechseljahre/">Produkte vergleichen →</a>
+        <div class="article-next-copy"><p class="eyebrow">Nächster Schritt</p>
+          <h2>Was belastet Sie am meisten?</h2>
+          <p>Wählen Sie Ihr Symptom und vergleichen Sie rezeptfreie Mittel mit Preisen aus über 25 Apotheken.</p>
+          <div class="article-symptoms"><span>Hitzewallungen & Nachtschweiß</span><span>Schlafprobleme</span><span>Stimmung & Unruhe</span><span>Trockenheit & Intimität</span><span>Zyklusveränderungen</span></div>
+          <a class="article-cta" href="wechseljahre/">Produkte vergleichen →</a>
+        </div>
+        <div class="article-next-visual"><img src="assets/menopause-mood.png" alt=""></div>
       </section>
-      <section class="article-sources"><h2>Quellen</h2><ol>${sources}</ol></section>
-      <p class="article-disclaimer">Allgemeine Gesundheitsinformation. Keine Diagnose, Behandlung oder medizinische Beratung. Dieser Artikel ersetzt nicht das Gespräch mit Ihrer Ärztin oder Ihrem Arzt. Bei akuten Beschwerden wenden Sie sich an Ihre behandelnde Praxis, den ärztlichen Bereitschaftsdienst (116117) oder im Notfall an 112.</p>
+      <section class="article-sources"><h2>Quellen</h2><ol>${sources}</ol><p class="article-disclaimer">Allgemeine Gesundheitsinformation. Keine Diagnose, Behandlung oder medizinische Beratung. Dieser Artikel ersetzt nicht das Gespräch mit Ihrer Ärztin oder Ihrem Arzt. Bei akuten Beschwerden wenden Sie sich an Ihre behandelnde Praxis, den ärztlichen Bereitschaftsdienst (116117) oder im Notfall an 112.</p></section>
     </div>
   </article>
-  <section class="article-related">
-    <div class="article-related-head"><h2>Weitere Artikel</h2><a href="wechseljahre/#guides">Alle Ratgeber →</a></div>
-    <div class="article-related-grid">${related(article)}</div>
-  </section>
 </main>
 ${footer()}
 </body>
