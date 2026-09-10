@@ -17,18 +17,15 @@ body.article-page { background: #fff; color: var(--article-ink); }
 .article-page .article-nav a { color: #151219; text-decoration: none; font-size: 15px; white-space: nowrap; }
 .article-page .article-nav a:last-child { font-weight: 600; }
 
-/* Same white-wash treatment as the hub hero: copy and photography share one field. */
-.article-hero-stage { position: relative; width: min(100%, 1880px); min-height: 600px; margin: 0 auto; overflow: hidden; background: linear-gradient(110deg, #effcf8 0%, #fff 45%, #f5f1ff 100%); }
-.article-hero-inner { position: relative; z-index: 3; width: min(1540px, calc(100% - 48px)); min-height: 600px; margin: 0 auto; display: flex; align-items: center; }
-.article-hero-copy { width: min(57%, 760px); padding: 54px 0 64px; }
-.article-hero-media { position: absolute; z-index: 1; inset: 0 0 0 auto; width: 62%; margin: 0; overflow: hidden; }
-.article-hero-media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.article-hero-wash { position: absolute; z-index: 2; inset: 0; background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.98) 38%, rgba(255,255,255,.9) 50%, rgba(255,255,255,.42) 62%, rgba(255,255,255,0) 78%); pointer-events: none; }
-.article-kicker { margin: 0 0 24px; color: #606b7d; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: .035em; text-transform: uppercase; }
-.article-title { margin: 0; max-width: 760px; font-size: clamp(48px, 4.4vw, 70px); line-height: 1.01; letter-spacing: -.045em; font-weight: 700; text-wrap: balance; }
-.article-lede { margin: 30px 0 0; max-width: 750px; font-size: 21px; line-height: 1.55; color: #647084; text-wrap: pretty; }
-.article-meta { display: flex; flex-wrap: wrap; gap: 10px; margin: 30px 0 0; padding: 0; list-style: none; }
-.article-meta li { display: inline-flex; align-items: center; min-height: 42px; padding: 0 15px; border: 1px solid #e0e3e9; border-radius: 999px; background: rgba(255,255,255,.88); color: #2f3440; font-size: 13px; line-height: 1.25; font-weight: 700; }
+/* The article lead deliberately reuses the hub's .wrap + .hero + .herotext +
+   .heroimg structure. These rules only fit article copy into that same frame. */
+.article-hero { --hero-height: 380px; min-height: var(--hero-height); padding-top: 8px; }
+.article-hero .herotext { width: min(50%, 610px); min-height: var(--hero-height); padding-left: 34px; }
+.article-kicker { margin: 0 0 14px; color: #606b7d; font-size: 14px; line-height: 1.2; font-weight: 700; letter-spacing: .035em; text-transform: uppercase; }
+.article-title { max-width: 610px; text-wrap: balance; }
+.article-lede { margin: 16px 0 0; max-width: 540px; font-size: 16px; line-height: 1.5; color: #647084; text-wrap: pretty; }
+.article-meta { display: flex; flex-wrap: wrap; gap: 7px; margin: 18px 0 0; padding: 0; list-style: none; }
+.article-meta li { display: inline-flex; align-items: center; min-height: 34px; padding: 0 12px; border: 1px solid #e0e3e9; border-radius: 999px; background: rgba(255,255,255,.9); color: #2f3440; font-size: 11px; line-height: 1.2; font-weight: 700; }
 
 .article-shell { max-width: 760px; margin: 0 auto; padding: 68px 24px 74px; }
 .article-copy > p, .article-copy > ul, .article-copy > ol { font-size: 16px; line-height: 1.65; color: var(--article-text); }
@@ -77,26 +74,14 @@ body.article-page { background: #fff; color: var(--article-ink); }
 .article-sources li { margin-bottom: 10px; }
 .article-disclaimer { margin: 22px 0 0 !important; padding: 18px 0 0; border-top: 1px solid #dfe2e6; color: #788190 !important; font-size: 10px !important; line-height: 1.55 !important; }
 
-@media (max-width: 980px) {
-  .article-hero-stage, .article-hero-inner { min-height: 540px; }
-  .article-hero-copy { width: 60%; }
-  .article-title { font-size: 49px; }
-  .article-lede { font-size: 18px; }
-}
-
 @media (max-width: 760px) {
   .article-page .article-nav { display: none; }
   .article-page .hdnav .hdlang { display: none; }
-  .article-hero-stage { display: grid; min-height: 0; width: 100%; background: #fff; overflow: visible; }
-  .article-hero-media { position: relative; inset: auto; order: 1; width: 100%; aspect-ratio: 16 / 9; }
-  .article-hero-media img { object-position: center; }
-  .article-hero-wash { display: none; }
-  .article-hero-inner { order: 2; width: 100%; min-height: 0; padding: 0 16px; }
-  .article-hero-copy { width: 100%; padding: 31px 0 38px; }
-  .article-kicker { margin-bottom: 17px; font-size: 13px; }
-  .article-title { font-size: 38px; line-height: 1.03; }
-  .article-lede { margin-top: 20px; font-size: 17px; line-height: 1.5; }
-  .article-meta { margin-top: 22px; gap: 8px; }
+  .article-hero { min-height: 0; }
+  .article-hero .herotext { width: 100%; min-height: 0; padding-left: 0; }
+  .article-kicker { margin-bottom: 12px; font-size: 12px; }
+  .article-lede { margin-top: 14px; font-size: 15px; line-height: 1.5; }
+  .article-meta { margin-top: 17px; gap: 7px; }
   .article-meta li { min-height: 36px; padding: 0 12px; font-size: 11px; }
   .article-shell { padding: 42px 18px 52px; }
   .article-copy > p, .article-copy > ul, .article-copy > ol { font-size: 16px; line-height: 1.65; }

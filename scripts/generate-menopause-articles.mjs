@@ -221,22 +221,19 @@ function render(article) {
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/onfy.css">
   <link rel="stylesheet" href="styles/vh.css">
-  <link rel="stylesheet" href="styles/article.css?v=2">
+  <link rel="stylesheet" href="styles/article.css?v=3">
 </head>
 <body class="article-page">
 ${header()}
 <main>
-  <section class="article-hero-stage">
-    <figure class="article-hero-media"><img src="${article.image}" alt="${escapeHtml(article.alt)}"></figure>
-    <div class="article-hero-wash" aria-hidden="true"></div>
-    <div class="article-hero-inner">
-      <div class="article-hero-copy">
-        <p class="article-kicker">Artikel · ${escapeHtml(article.category)}</p>
-        <h1 class="article-title">${escapeHtml(article.title)}</h1>
-        <p class="article-lede">${escapeHtml(article.lead)}</p>
-        <ul class="article-meta"><li>Lesezeit ca. ${article.minutes} Minuten</li><li>Aktualisiert Juni 2026</li><li>Auf Basis öffentlich zugänglicher medizinischer Leitlinien</li></ul>
-      </div>
+  <section class="wrap hero article-hero">
+    <div class="herotext">
+      <p class="article-kicker">Artikel · ${escapeHtml(article.category)}</p>
+      <h1 class="h1 article-title">${escapeHtml(article.title)}</h1>
+      <p class="article-lede">${escapeHtml(article.lead)}</p>
+      <ul class="article-meta"><li>Lesezeit ca. ${article.minutes} Minuten</li><li>Aktualisiert Juni 2026</li><li>Auf Basis öffentlich zugänglicher medizinischer Leitlinien</li></ul>
     </div>
+    <div class="heroimg"><img class="heroimgpic" src="${article.image}" alt="${escapeHtml(article.alt)}"></div>
   </section>
   <article class="article-shell">
     <div class="article-copy">
