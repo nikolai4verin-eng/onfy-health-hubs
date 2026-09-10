@@ -13,35 +13,45 @@
 .wordmark.dark { color: var(--onfy-text-primary); }
 .brandlogo { display: block; width: 96px; height: auto; }
 
-/* Menopause hub: match the current storefront shell and page geometry. */
-.menopause-hub .wrap { max-width: 1632px; padding-left: 0; padding-right: 0; }
-.menopause-hub .hd { position: relative; }
+/* Menopause hub: measured against the live storefront at the same viewport. */
+.menopause-hub {
+  font-family: var(--onfy-font-body);
+  color: var(--onfy-text-primary);
+  overflow-x: clip;
+}
+.menopause-hub .wrap { width: min(1280px, calc(100% - 68px)); max-width: 1280px; padding-left: 0; padding-right: 0; }
+.menopause-hub .hd { position: relative; height: 92px; }
 .menopause-hub .hdin {
   max-width: none;
-  min-height: 114px;
-  padding: 24px 12px;
-  gap: 40px;
+  height: 92px;
+  min-height: 92px;
+  padding: 20px 24px;
+  gap: 32px;
 }
-.menopause-hub .brandlogo { width: 156px; }
+.menopause-hub .brandlogo { width: 127px; }
 .menopause-hub .search {
-  height: 66px;
+  height: 52px;
   padding-left: 18px;
-  padding-right: 4px;
-  border: 2px solid var(--onfy-brand);
+  padding-right: 0;
+  border: 1.5px solid var(--onfy-brand);
 }
-.menopause-hub .search input { font-size: 19px; padding-left: 14px; }
-.menopause-hub .searchbtn { height: 56px; min-width: 134px; padding: 0 30px; font-size: 18px; }
-.menopause-hub .hdnav { gap: 30px; }
-.menopause-hub .hdact { min-width: 64px; padding: 0; gap: 5px; font-size: 16px; font-weight: 400; }
+.menopause-hub .search input { font-size: 16px; padding-left: 14px; }
+.menopause-hub .searchbtn { height: 52px; min-width: 106px; padding: 0 24px; font-size: 16px; }
+.menopause-hub .hdnav { gap: 28px; }
+.menopause-hub .hdact { min-width: 52px; height: 50px; padding: 0; gap: 4px; font-size: 14px; font-weight: 400; }
 .menopause-hub .categorynav {
-  height: 66px;
-  padding: 0 20px;
+  position: absolute;
+  z-index: 3;
+  top: 92px;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 16px;
   overflow: hidden;
-  border-top: 1px solid var(--onfy-border-subtle);
   border-bottom: 1px solid var(--onfy-border-subtle);
   background: #fff;
 }
@@ -49,7 +59,7 @@
   color: var(--onfy-text-primary);
   text-decoration: none;
   white-space: nowrap;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 .menopause-hub .categorynav a:hover { color: var(--onfy-brand); }
@@ -116,34 +126,39 @@
   mix-blend-mode: normal;
 }
 .hero > .trust { position: relative; z-index: 2; margin-top: 28px; }
-.menopause-hub .hero { --hero-height: 475px; min-height: 529px; padding-top: 20px; }
-.menopause-hub .hero .herotext { width: min(47%, 720px); padding-left: 0; }
-.menopause-hub .hero .h1 { max-width: 700px; font-size: 50px; line-height: 1.12; letter-spacing: -0.025em; }
-.menopause-hub .hero .heroimg { top: 20px; }
-.menopause-hub .hero .micro { margin-top: 18px; font-size: 16px; }
+.menopause-hub .hero { --hero-height: 380px; min-height: 428px; height: 428px; padding-top: 0; margin-top: 68px; }
+.menopause-hub .hero .herotext { width: 50%; min-height: 380px; padding-left: 0; }
+.menopause-hub .hero .h1 { max-width: none; font-size: 44px; line-height: 48px; letter-spacing: -0.025em; }
+.menopause-hub .hero .heroimg { top: 0; }
+.menopause-hub .hero .micro { margin-top: 12px; font-size: 15px; line-height: 20px; }
 .menopause-hub .hero .micro .dot { background: var(--onfy-brand); }
-.menopause-hub .hero > .trust { padding-left: 0; margin-top: 44px; }
-.menopause-hub .hero + .sec { padding-top: 62px; }
-.menopause-hub .secttl { font-size: 30px; }
-.menopause-hub .secsub { font-size: 17px; margin-top: 8px; }
-
-@media (max-width: 1696px) {
-  .menopause-hub .wrap { max-width: none; margin-left: 32px; margin-right: 32px; }
-}
+.menopause-hub .hero > .trust { height: 48px; padding: 26px 0 0; margin-top: 0; gap: 0; flex-wrap: nowrap; }
+.menopause-hub .hero > .trust .tchip { padding: 2px 14px; gap: 8px; }
+.menopause-hub .hero > .trust .tcf { padding-left: 0; }
+.menopause-hub .hero > .trust .tlabel { font-size: 13px; line-height: 18px; }
+.menopause-hub .hero + .sec { padding-top: 48px; }
+.menopause-hub .secttl { font-size: 24px; line-height: 32px; }
+.menopause-hub .secsub { font-size: 15px; line-height: 20px; margin-top: 6px; }
+.menopause-hub .startgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-top: 0; margin-top: 28px; }
+.menopause-hub .scard { min-height: 144px; padding: 20px 24px; gap: 16px; border-radius: 18px; }
+.menopause-hub .sctext { gap: 6px; }
+.menopause-hub .sclabel { font-size: 17px; line-height: 24px; }
+.menopause-hub .scsub { margin-top: 0; font-size: 15px; line-height: 20px; }
+.menopause-hub .sillu { width: 100px; height: 100px; }
 
 @media (max-width: 1180px) {
   .menopause-hub .hdin { gap: 20px; }
-  .menopause-hub .brandlogo { width: 127px; }
   .menopause-hub .hdnav { gap: 14px; }
   .menopause-hub .categorynav { overflow-x: auto; justify-content: flex-start; scrollbar-width: none; }
   .menopause-hub .categorynav::-webkit-scrollbar { display: none; }
-  .menopause-hub .hero .h1 { font-size: 44px; }
+  .menopause-hub .hero .h1 { font-size: 40px; line-height: 44px; }
+  .menopause-hub .startgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
-  .menopause-hub .wrap { margin-left: 16px; margin-right: 16px; padding-left: 0; padding-right: 0; }
-  .menopause-hub .hd { position: sticky; }
-  .menopause-hub .hdin { min-height: 0; padding: 10px 16px 12px; gap: 10px; }
+  .menopause-hub .wrap { width: calc(100% - 32px); margin-left: auto; margin-right: auto; padding-left: 0; padding-right: 0; }
+  .menopause-hub .hd { position: sticky; height: auto; }
+  .menopause-hub .hdin { height: auto; min-height: 0; padding: 10px 16px 12px; gap: 10px; }
   .menopause-hub .brandlogo { width: 86px; }
   .menopause-hub .hdnav { gap: 10px; margin-left: auto; }
   .menopause-hub .hdact { min-width: 36px; }
@@ -152,12 +167,15 @@
   .menopause-hub .search input { font-size: 15px; }
   .menopause-hub .searchbtn { height: 38px; min-width: 0; padding: 0 20px; font-size: 14px; }
   .menopause-hub .categorynav { display: none; }
-  .menopause-hub .hero { min-height: 0; padding-top: 18px; }
+  .menopause-hub .hero { height: auto; min-height: 0; padding-top: 18px; margin-top: 0; }
   .menopause-hub .hero .herotext { width: 100%; padding-left: 0; }
   .menopause-hub .hero .heroimg { top: auto; }
   .menopause-hub .hero .h1 { font-size: 25px; line-height: 1.12; }
   .menopause-hub .hero > .trust { margin-top: 4px; }
   .menopause-hub .hero + .sec { padding-top: 20px; }
+  .menopause-hub .startgrid { grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
+  .menopause-hub .scard { min-height: 0; padding: 18px; }
+  .menopause-hub .sillu { width: 80px; height: 80px; }
   .hero { display: grid; grid-template-columns: 1fr; gap: 22px; min-height: 0; padding-top: 18px; }
   .hero .herotext { width: 100%; min-height: 0; padding-left: 0; order: 2; }
   .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; display: block; order: 1; aspect-ratio: auto; }
