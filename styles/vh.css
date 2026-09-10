@@ -64,6 +64,7 @@
   font-weight: 400;
 }
 .menopause-hub .categorynav a:hover { color: var(--onfy-brand); }
+.menopause-hub .categorynav-hint { display: none; }
 
 /* Hero without an image column */
 .hero.noimg { grid-template-columns: 1fr; }
@@ -174,7 +175,7 @@
     left: auto;
     width: 100%;
     height: 44px;
-    padding: 0 16px;
+    padding: 0 56px 0 16px;
     display: flex;
     justify-content: flex-start;
     gap: 24px;
@@ -186,6 +187,23 @@
   }
   .menopause-hub .categorynav::-webkit-scrollbar { display: none; }
   .menopause-hub .categorynav a { flex: 0 0 auto; scroll-snap-align: start; }
+  .menopause-hub .categorynav-hint {
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(255,255,255,0), #fff 44%);
+    color: var(--onfy-brand);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 500;
+    pointer-events: none;
+  }
   .menopause-hub .hero { display: grid; grid-template-columns: 1fr; gap: 22px; height: auto; min-height: 0; padding-top: 18px; margin-top: 0; }
   .menopause-hub .hero .herotext { width: 100%; min-height: 0; padding-left: 0; order: 2; }
   .menopause-hub .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; order: 1; }
@@ -194,9 +212,12 @@
   .menopause-hub .hero > .trust .tchip,
   .menopause-hub .hero > .trust .tcf { padding: 7px 11px; }
   .menopause-hub .hero + .sec { padding-top: 20px; }
-  .menopause-hub .startgrid { grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
-  .menopause-hub .scard { min-height: 0; padding: 18px; }
-  .menopause-hub .sillu { width: 80px; height: 80px; }
+  .menopause-hub .startgrid { grid-template-columns: 1fr; gap: 14px; margin-top: 20px; }
+  .menopause-hub .scard { min-height: 118px; padding: 15px 18px; gap: 12px; border-radius: 22px; }
+  .menopause-hub .sctext { gap: 5px; }
+  .menopause-hub .sclabel { font-size: 16px; line-height: 21px; }
+  .menopause-hub .scsub { font-size: 14px; line-height: 20px; }
+  .menopause-hub .sillu { width: 64px; height: 64px; }
   .hero { display: grid; grid-template-columns: 1fr; gap: 22px; min-height: 0; padding-top: 18px; }
   .hero .herotext { width: 100%; min-height: 0; padding-left: 0; order: 2; }
   .hero .heroimg { position: relative; top: auto; right: auto; width: 100%; height: auto; display: block; order: 1; aspect-ratio: auto; }
@@ -499,19 +520,94 @@
 }
 .menopause-hub .therapy-visual img { width: 240px; height: 240px; display: block; object-fit: contain; }
 
+/* Lower information area mirrors the live menopause hub. */
+.menopause-hub .evgrid { margin-top: 22px; }
+.menopause-hub .evcard { min-height: 277px; padding: 24px; border-radius: 24px; }
+.menopause-hub .trustband { border-radius: 42px; }
+.menopause-hub .faqsec .secttl { text-align: center; }
+.menopause-hub .faqwrap { margin-top: 36px; }
+.menopause-hub .faqitem {
+  overflow: visible;
+  border-radius: 36px;
+  background: transparent;
+  box-shadow: none;
+}
+.menopause-hub .faqitem:hover { box-shadow: none; }
+.menopause-hub .faqq {
+  min-height: 64px;
+  padding: 18px;
+  border: 1px solid #f1f2f4;
+  border-radius: 36px;
+  background: #fff;
+}
+.menopause-hub .faqaO { padding: 16px 24px 20px; }
+.menopause-hub .about-menopause {
+  margin-top: 48px;
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 42px;
+  background: #f6f7f9;
+}
+.menopause-hub .about-copy { color: #5a636d; font-size: 16px; line-height: 26px; }
+.menopause-hub .about-copy p { margin: 0; }
+.menopause-hub .about-copy p + p { margin-top: 16px; }
+.menopause-hub .about-legal { margin: 0; color: #79828c; font-size: 14px; line-height: 22px; }
+.menopause-hub .related-section { margin-top: 48px; display: flex; flex-direction: column; gap: 18px; }
+.menopause-hub .related-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.menopause-hub .related-card {
+  min-height: 160px;
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #e6e8ec;
+  border-radius: 24px;
+  background: #f6f7f9;
+  color: #161616;
+  text-decoration: none;
+}
+.menopause-hub .related-icon {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #6c39fd;
+}
+.menopause-hub .related-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.menopause-hub .related-copy { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.menopause-hub .related-copy b { font-size: 16px; line-height: 26px; }
+.menopause-hub .related-copy > span { color: #5a636d; font-size: 16px; line-height: 26px; }
+.menopause-hub .related-arrow { color: #79828c; font-size: 24px; }
+
 @media (max-width: 760px) {
   .menopause-hub .partner-section { margin-top: 20px; }
-  .menopause-hub .partner-shell { height: auto; padding: 16px; border-radius: 20px; }
-  .menopause-hub .partner-head { height: auto; margin-bottom: 16px; }
-  .menopause-hub .partner-head .secttl { font-size: 20px; line-height: 25px; }
+  .menopause-hub .partner-shell { height: 403px; padding: 20px; border-radius: 0; }
+  .menopause-hub .partner-head { height: 49px; margin: 0; }
+  .menopause-hub .partner-head .secttl { font-size: 24px; line-height: 30px; }
   .menopause-hub .partner-arrows { display: none; }
-  .menopause-hub .partner-body { height: auto; flex-direction: column; }
-  .menopause-hub .partner-promo { flex: none; width: 100%; height: 220px; }
-  .menopause-hub .partner-promo img { height: 92px; }
-  .menopause-hub .partner-rail { width: 100%; }
-  .menopause-hub .partner-product { flex-basis: 172px; }
-  .menopause-hub .partner-well { width: 172px; height: 172px; }
-  .menopause-hub .partner-legal { font-size: 11px; line-height: 16px; }
+  .menopause-hub .partner-body {
+    width: 100%;
+    height: 314px;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .menopause-hub .partner-body::-webkit-scrollbar { display: none; }
+  .menopause-hub .partner-promo { flex: 0 0 203px; width: 203px; height: 307px; scroll-snap-align: start; }
+  .menopause-hub .partner-promo img { height: 140px; }
+  .menopause-hub .partner-rail { flex: 0 0 auto; width: max-content; overflow: visible; }
+  .menopause-hub .partner-product { flex-basis: 184px; }
+  .menopause-hub .partner-well { width: 184px; height: 184px; }
+  .menopause-hub .partner-legal { padding: 0 20px; font-size: 11px; line-height: 16px; }
   .menopause-hub .therapy-banner { min-height: 0; padding: 24px; flex-direction: column; gap: 24px; border-radius: 20px; }
   .menopause-hub .therapy-copy h2 { font-size: 22px; line-height: 28px; }
   .menopause-hub .therapy-text { font-size: 15px; line-height: 24px; }
@@ -520,6 +616,16 @@
   .menopause-hub .therapy-cta { width: 100%; justify-content: center; }
   .menopause-hub .therapy-visual { order: -1; width: 100%; height: 240px; flex-basis: auto; border-radius: 140px 140px 20px 20px; }
   .menopause-hub .therapy-visual img { width: 208px; height: 208px; }
+  .menopause-hub .evcard { min-height: 0; padding: 20px; border-radius: 20px; }
+  .menopause-hub .trustband { border-radius: 28px; }
+  .menopause-hub .faqwrap { margin-top: 24px; }
+  .menopause-hub .faqq { min-height: 60px; height: auto; padding: 16px 18px; border-radius: 30px; }
+  .menopause-hub .about-menopause { margin-top: 32px; padding: 24px; gap: 18px; border-radius: 28px; }
+  .menopause-hub .about-copy { font-size: 15px; line-height: 24px; }
+  .menopause-hub .about-legal { font-size: 12px; line-height: 18px; }
+  .menopause-hub .related-section { margin-top: 32px; }
+  .menopause-hub .related-grid { grid-template-columns: 1fr; gap: 12px; }
+  .menopause-hub .related-card { min-height: 118px; padding: 22px 18px; }
 }
 
 /* Menopause typography: measured from the live hub at desktop width. */
