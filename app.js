@@ -23,9 +23,6 @@
   };
   var NO_SET_DEFAULT = 'No set for this goal yet. The single products above are the honest option.';
 
-  /* Card that opens preselected: the largest shelf in the category. */
-  var DEFAULT_GOAL = 'muscles';
-
   var current = null;
   var cards = [].slice.call(document.querySelectorAll('.scard[data-goal]'));
   var chipRows = [].slice.call(document.querySelectorAll('[data-chips]'));
@@ -118,9 +115,8 @@
     btn.textContent = '✓';
   });
 
-  /* Open on the largest shelf instead of an undifferentiated 28-product rail.
-     No scroll on init — only on an actual click. */
-  apply(DEFAULT_GOAL);
+  /* Production starts unfiltered; a symptom is selected only after a click. */
+  apply(null);
 
   /* Rail arrows */
   [].slice.call(document.querySelectorAll('[data-scroll]')).forEach(function (btn) {
