@@ -11,7 +11,7 @@ const articles = [
     title: 'Hitzewallungen und Nachtschweiß: was wirklich hilft',
     lead: 'Plötzlich steigt die Hitze auf, das Herz klopft, nachts wird die Wäsche nass – und der Schlaf leidet. Hier lesen Sie, was dabei im Körper passiert, was im Alltag hilft und welche ruhigen ersten Schritte es gibt.',
     minutes: 8,
-    image: 'assets/hero-hitzewallungen-nachtschweiss.png',
+    image: 'assets/hero-hitzewallungen-nachtschweiss.jpg',
     alt: 'Frau bei einer Hitzewallung im Büro',
     contentImage: 'assets/menopause-article-hot-flashes.png',
     contentImageAlt: 'Frau zieht in einem warmen Moment ihren Cardigan aus',
