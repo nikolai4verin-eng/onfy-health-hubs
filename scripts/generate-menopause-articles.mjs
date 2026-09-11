@@ -27,6 +27,7 @@ const articles = [
       <h2>Was bei einer Hitzewallung im Körper passiert</h2>
       <p>Die Körpertemperatur wird im Gehirn reguliert. Während der Wechseljahre wird der Bereich, den der Körper als angenehm empfindet, enger. Schon kleine Temperaturschwankungen können deshalb eine starke Gegenreaktion auslösen: Die Gefäße in der Haut weiten sich und der Körper beginnt zu schwitzen.</p>
       <p>Typische Verstärker sind warme Räume, Alkohol, scharfes Essen, viel Koffein, Rauchen oder Stress. Nicht jede Frau reagiert auf dieselben Auslöser – ein persönliches Muster ist hilfreicher als eine lange Verbotsliste.</p>
+      {{contentImage}}
       <h2>Wie häufig und wie lange?</h2>
       <p>Die Intensität reicht von kaum wahrnehmbaren Wärmegefühlen bis zu Beschwerden, die Schlaf und Alltag deutlich beeinträchtigen. Auch die Dauer ist sehr verschieden: Bei manchen Frauen verschwinden Wallungen nach kurzer Zeit, bei anderen begleiten sie die Übergangsphase über mehrere Jahre.</p>
       <h2>Was im Alltag helfen kann</h2>
@@ -68,6 +69,7 @@ const articles = [
       <h2>Warum der Schlaf in den Wechseljahren leidet</h2>
       <p>Progesteron und Östrogen verändern sich in der Perimenopause. Gleichzeitig können Hitzewallungen aus dem Schlaf reißen. Dazu kommen Belastungen des Alltags, eine empfindlichere Stressreaktion und manchmal ein neues Gefühl innerer Unruhe. Schlechter Schlaf und Anspannung verstärken sich dann gegenseitig.</p>
       <p>Auch Herzklopfen kann nachts stärker auffallen. Es kann zwar in dieser Lebensphase auftreten, sollte aber nicht automatisch den Hormonen zugeschrieben werden.</p>
+      {{contentImage}}
       <h2>Was im Alltag hilft</h2>
       <ul class="article-tip-grid">
         <li>Feste Schlaf- und Aufstehzeiten – möglichst auch am Wochenende.</li>
@@ -108,6 +110,7 @@ const articles = [
     body: `
       <h2>Was Östrogen mit den Gelenken zu tun hat</h2>
       <p>Östrogen wirkt an vielen Stellen des Bewegungsapparats. Sinkt der Spiegel, können sich Kollagen, Knorpel, Gelenkflüssigkeit und Entzündungsbereitschaft verändern. Beschwerden sind oft diffus und können wandern. Besonders häufig werden Finger, Hände, Schultern und Knie genannt.</p>
+      {{contentImage}}
       <aside class="article-callout article-callout--note"><h3>Wichtig zur Einordnung</h3><p>Nicht jeder Schmerz in der Lebensmitte ist hormonell bedingt. Verschleiß, entzündlich-rheumatische Erkrankungen, Verletzungen oder andere Ursachen müssen mitgedacht werden.</p></aside>
       <h3>Frozen Shoulder – die schmerzhafte Schultersteife</h3>
       <p>Eine zunehmend steife und schmerzhafte Schulter tritt besonders häufig zwischen 40 und 60 Jahren auf. Beobachtungsdaten deuten auf einen Zusammenhang mit Östrogen hin, beweisen ihn aber nicht. Anhaltende Schulterbeschwerden gehören deshalb in ärztliche oder physiotherapeutische Hände.</p>
@@ -151,6 +154,7 @@ const articles = [
       <h2>Was ist die Perimenopause?</h2>
       <p>Die Perimenopause ist die Übergangszeit vor und rund um die letzte Regelblutung. Die Menopause selbst bezeichnet nur diesen letzten Blutungszeitpunkt und kann erst rückblickend bestimmt werden – nach zwölf Monaten ohne Periode. Danach beginnt die Postmenopause.</p>
       <p>Beginnt die Menopause vor dem 40. Geburtstag, spricht man von einer vorzeitigen Menopause; zwischen 40 und 44 von einer frühen Menopause. Beides sollte ärztlich begleitet werden.</p>
+      {{contentImage}}
       <h2>Was im Körper passiert</h2>
       <p>In der frühen Perimenopause arbeiten die Eierstöcke unregelmäßiger. Progesteron sinkt häufig zuerst, während Östrogen stark schwanken kann. Das Ergebnis ist kein gleichmäßiger Abstieg, sondern ein Auf und Ab – und damit auch wechselnde Beschwerden.</p>
       <h2>Die ersten Anzeichen</h2>
@@ -215,8 +219,9 @@ function render(article) {
   const summary = article.summary.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
   const sources = article.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a></li>`).join('');
   const contentImage = article.contentImage
-    ? `      <figure class="article-feature-image"><img src="${article.contentImage}" alt="${escapeHtml(article.contentImageAlt || '')}"></figure>\n`
+    ? `<figure class="article-feature-image"><img src="${article.contentImage}" alt="${escapeHtml(article.contentImageAlt || '')}"></figure>`
     : '';
+  const body = article.body.replace('{{contentImage}}', contentImage);
   return `<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -250,7 +255,7 @@ ${header()}
     <div class="article-copy">
       <p>${escapeHtml(article.intro)}</p>
       <aside class="article-summary"><h2>Auf einen Blick</h2><ul>${summary}</ul></aside>
-${contentImage}      ${article.body}
+      ${body}
       <section class="article-next">
         <div class="article-next-copy"><p class="eyebrow">Nächster Schritt</p>
           <h2>Was belastet Sie am meisten?</h2>
