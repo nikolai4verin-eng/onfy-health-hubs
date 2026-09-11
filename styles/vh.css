@@ -6,7 +6,6 @@
    ============================================================ */
 
 .hidden { display: none !important; }
-.menopause-hub:not(.vitamins-hub) .legacy-vitamin-products { display: none; }
 
 /* Wordmark (the bundle used the proprietary Onfy logo asset) */
 .wordmark { font-family: var(--onfy-font-body); font-weight: 800; font-size: 26px; letter-spacing: -0.03em; line-height: 1; }
@@ -107,6 +106,11 @@
 }
 .hero .heroimg picture { display: block; width: 100%; height: 100%; }
 .pwell .product-image { display: block; width: 100%; height: 100%; object-fit: contain; }
+.menopause-product-module .pwell > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.set-product-images { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; gap: 3px; padding: 30px 24px; }
+.set-product-images img { min-width: 0; width: 46%; height: 78%; object-fit: contain; }
+.set-product-images.count-3 img { width: 31%; }
+.menopause-product-note { margin-top: 14px; }
 .hero .heroimg::after {
   content: "";
   position: absolute;
