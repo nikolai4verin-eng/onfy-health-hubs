@@ -11,8 +11,10 @@ const articles = [
     title: 'Hitzewallungen und Nachtschweiß: was wirklich hilft',
     lead: 'Plötzlich steigt die Hitze auf, das Herz klopft, nachts wird die Wäsche nass – und der Schlaf leidet. Hier lesen Sie, was dabei im Körper passiert, was im Alltag hilft und welche ruhigen ersten Schritte es gibt.',
     minutes: 8,
-    image: 'assets/menopause-article-hot-flashes.png',
-    alt: 'Frau zieht in einem warmen Moment ihren Cardigan aus',
+    image: 'assets/hero-hitzewallungen-nachtschweiss.png',
+    alt: 'Frau bei einer Hitzewallung im Büro',
+    contentImage: 'assets/menopause-article-hot-flashes.png',
+    contentImageAlt: 'Frau zieht in einem warmen Moment ihren Cardigan aus',
     intro: 'Hitzewallungen kommen oft ohne Vorwarnung: Ein Hitzegefühl steigt nach oben, die Haut rötet sich, Schweiß tritt auf und danach kann Frösteln folgen. Nachts unterbrechen dieselben Vorgänge den Schlaf. Zu verstehen, was dabei passiert, hilft dabei, Beschwerden einzuordnen und passende nächste Schritte zu wählen.',
     summary: [
       'Hitzewallungen und Nachtschweiß zählen zu den häufigsten Beschwerden in den Wechseljahren.',
@@ -206,6 +208,9 @@ function footer() {
 function render(article) {
   const summary = article.summary.map((item) => `<li>${escapeHtml(item)}</li>`).join('');
   const sources = article.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a></li>`).join('');
+  const contentImage = article.contentImage
+    ? `      <figure class="article-feature-image"><img src="${article.contentImage}" alt="${escapeHtml(article.contentImageAlt || '')}"></figure>\n`
+    : '';
   return `<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -239,7 +244,7 @@ ${header()}
     <div class="article-copy">
       <p>${escapeHtml(article.intro)}</p>
       <aside class="article-summary"><h2>Auf einen Blick</h2><ul>${summary}</ul></aside>
-      ${article.body}
+${contentImage}      ${article.body}
       <section class="article-next">
         <div class="article-next-copy"><p class="eyebrow">Nächster Schritt</p>
           <h2>Was belastet Sie am meisten?</h2>
