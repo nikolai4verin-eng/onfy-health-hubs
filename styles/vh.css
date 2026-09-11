@@ -733,7 +733,7 @@
   }
   .product-module .pcard,
   .product-module .pcard.wide {
-    flex: 0 0 clamp(164px, 44vw, 188px);
+    flex: 0 0 150px;
   }
   .product-module #setRail .pcard.wide {
     overflow: hidden;
