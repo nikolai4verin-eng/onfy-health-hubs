@@ -711,19 +711,19 @@
   .product-module + .product-module { padding-top: 58px; }
   .product-module .sechead { align-items: flex-start; }
   .product-module .secttl { font-size: 24px; line-height: 32px; }
-  .product-module .secsub { margin-top: 4px; font-size: 16px; line-height: 26px; }
+  .product-module .secsub { margin-top: 4px; font-size: 15px; line-height: 24px; }
   .product-module .secright { display: none; }
   .product-module .chips {
     gap: 10px;
-    margin: 22px -16px 2px 0;
+    margin: 20px -16px 2px 0;
     padding: 0 16px 0 0;
   }
   .product-module .chip {
     flex: 0 0 auto;
-    height: 44px;
-    padding: 0 18px;
-    font-size: 16px;
-    line-height: 22px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .product-module .prail {
     gap: 12px;
@@ -770,17 +770,17 @@
     width: 40px;
     height: 40px;
   }
-  .product-module .pinfo { gap: 2px; padding: 10px 4px 0; }
+  .product-module .pinfo { gap: 1px; padding: 8px 4px 0; }
   .product-module .prow { gap: 6px; flex-wrap: nowrap; }
-  .product-module .prow b { font-size: 17px; line-height: 23px; white-space: nowrap; }
-  .product-module .prow s { font-size: 12px; line-height: 18px; white-space: nowrap; }
+  .product-module .prow b { font-size: 16px; line-height: 22px; white-space: nowrap; }
+  .product-module .prow s { font-size: 11px; line-height: 16px; white-space: nowrap; }
   .product-module .pname {
-    min-height: 42px;
-    font-size: 15px;
-    line-height: 21px;
+    min-height: 38px;
+    font-size: 14px;
+    line-height: 19px;
   }
   .product-module .punit,
-  .product-module .pclass { font-size: 13px; line-height: 20px; }
+  .product-module .pclass { font-size: 12px; line-height: 18px; }
   .product-module .pcombo {
     color: var(--onfy-brand);
     font-size: 14px;
@@ -804,8 +804,8 @@
     margin-top: 4px;
     padding-right: 4px;
     gap: 8px;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 11px;
+    line-height: 16px;
   }
   .product-module-note .compico { flex: 0 0 auto; margin-top: 1px; }
 }
