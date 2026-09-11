@@ -106,11 +106,11 @@
 }
 .hero .heroimg picture { display: block; width: 100%; height: 100%; }
 .pwell .product-image { display: block; width: 100%; height: 100%; object-fit: contain; }
-.menopause-product-module .pwell > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.product-module .pwell > img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .set-product-images { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; gap: 3px; padding: 30px 24px; }
 .set-product-images img { min-width: 0; width: 46%; height: 78%; object-fit: contain; }
 .set-product-images.count-3 img { width: 31%; }
-.menopause-product-note { margin-top: 14px; }
+.product-module-note { margin-top: 14px; }
 .hero .heroimg::after {
   content: "";
   position: absolute;
@@ -707,56 +707,56 @@
 
 /* Menopause product rails: mobile proportions from the live ONFY hub. */
 @media (max-width: 760px) {
-  .menopause-hub .menopause-product-module { padding-top: 42px; overflow: hidden; }
-  .menopause-hub .menopause-product-module + .menopause-product-module { padding-top: 58px; }
-  .menopause-hub .menopause-product-module .sechead { align-items: flex-start; }
-  .menopause-hub .menopause-product-module .secttl { font-size: 24px; line-height: 32px; }
-  .menopause-hub .menopause-product-module .secsub { margin-top: 4px; font-size: 16px; line-height: 26px; }
-  .menopause-hub .menopause-product-module .secright { display: none; }
-  .menopause-hub .menopause-product-module .chips {
+  .product-module { padding-top: 42px; overflow: hidden; }
+  .product-module + .product-module { padding-top: 58px; }
+  .product-module .sechead { align-items: flex-start; }
+  .product-module .secttl { font-size: 24px; line-height: 32px; }
+  .product-module .secsub { margin-top: 4px; font-size: 16px; line-height: 26px; }
+  .product-module .secright { display: none; }
+  .product-module .chips {
     gap: 10px;
     margin: 22px -16px 2px 0;
     padding: 0 16px 0 0;
   }
-  .menopause-hub .menopause-product-module .chip {
+  .product-module .chip {
     flex: 0 0 auto;
     height: 44px;
     padding: 0 18px;
     font-size: 16px;
     line-height: 22px;
   }
-  .menopause-hub .menopause-product-module .prail {
+  .product-module .prail {
     gap: 12px;
     margin-right: -16px;
     padding: 22px 16px 20px 0;
     -webkit-overflow-scrolling: touch;
   }
-  .menopause-hub .menopause-product-module .pcard,
-  .menopause-hub .menopause-product-module .pcard.wide {
+  .product-module .pcard,
+  .product-module .pcard.wide {
     flex: 0 0 clamp(164px, 44vw, 188px);
   }
-  .menopause-hub .menopause-product-module #setRail .pcard.wide {
+  .product-module #setRail .pcard.wide {
     overflow: hidden;
     border: 1px solid #e2d8ff;
     border-radius: 18px;
     background: var(--onfy-brand-soft);
   }
-  .menopause-hub .menopause-product-module #setRail .pwell {
+  .product-module #setRail .pwell {
     border-radius: 17px 17px 0 0;
     background: var(--onfy-brand-soft);
   }
-  .menopause-hub .menopause-product-module #setRail .pinfo {
+  .product-module #setRail .pinfo {
     flex: 1;
     padding: 10px 14px 14px;
     background: var(--onfy-brand-soft);
   }
-  .menopause-hub .menopause-product-module .pwell { border-radius: 17px; }
-  .menopause-hub .menopause-product-module .pwell > img {
+  .product-module .pwell { border-radius: 17px; }
+  .product-module .pwell > img {
     width: 62%;
     height: 62%;
     object-fit: contain;
   }
-  .menopause-hub .menopause-product-module .pdisc {
+  .product-module .pdisc {
     top: 10px;
     left: 10px;
     padding: 4px 8px;
@@ -764,48 +764,48 @@
     line-height: 18px;
     font-weight: 400;
   }
-  .menopause-hub .menopause-product-module .pplus {
+  .product-module .pplus {
     right: 10px;
     bottom: 10px;
     width: 40px;
     height: 40px;
   }
-  .menopause-hub .menopause-product-module .pinfo { gap: 2px; padding: 10px 4px 0; }
-  .menopause-hub .menopause-product-module .prow { gap: 6px; flex-wrap: nowrap; }
-  .menopause-hub .menopause-product-module .prow b { font-size: 17px; line-height: 23px; white-space: nowrap; }
-  .menopause-hub .menopause-product-module .prow s { font-size: 12px; line-height: 18px; white-space: nowrap; }
-  .menopause-hub .menopause-product-module .pname {
+  .product-module .pinfo { gap: 2px; padding: 10px 4px 0; }
+  .product-module .prow { gap: 6px; flex-wrap: nowrap; }
+  .product-module .prow b { font-size: 17px; line-height: 23px; white-space: nowrap; }
+  .product-module .prow s { font-size: 12px; line-height: 18px; white-space: nowrap; }
+  .product-module .pname {
     min-height: 42px;
     font-size: 15px;
     line-height: 21px;
   }
-  .menopause-hub .menopause-product-module .punit,
-  .menopause-hub .menopause-product-module .pclass { font-size: 13px; line-height: 20px; }
-  .menopause-hub .menopause-product-module .pcombo {
+  .product-module .punit,
+  .product-module .pclass { font-size: 13px; line-height: 20px; }
+  .product-module .pcombo {
     color: var(--onfy-brand);
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
   }
-  .menopause-hub .menopause-product-module .pcombo span { font-size: 16px; }
-  .menopause-hub .menopause-product-module .set-product-images {
+  .product-module .pcombo span { font-size: 16px; }
+  .product-module .set-product-images {
     gap: 2px;
     padding: 24px 16px;
   }
-  .menopause-hub .menopause-product-module .set-product-images img {
+  .product-module .set-product-images img {
     width: 47%;
     height: 70%;
   }
-  .menopause-hub .menopause-product-module .set-product-images.count-3 img {
+  .product-module .set-product-images.count-3 img {
     width: 31%;
     height: 66%;
   }
-  .menopause-hub .menopause-product-note {
+  .product-module-note {
     margin-top: 4px;
     padding-right: 4px;
     gap: 8px;
     font-size: 12px;
     line-height: 17px;
   }
-  .menopause-hub .menopause-product-note .compico { flex: 0 0 auto; margin-top: 1px; }
+  .product-module-note .compico { flex: 0 0 auto; margin-top: 1px; }
 }
