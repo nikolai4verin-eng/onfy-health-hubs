@@ -104,6 +104,7 @@
   background: #fff;
   display: block;
 }
+.hero .heroimg picture { display: block; width: 100%; height: 100%; }
 .hero .heroimg::after {
   content: "";
   position: absolute;
