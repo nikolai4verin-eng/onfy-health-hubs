@@ -739,16 +739,16 @@
     overflow: hidden;
     border: 1px solid #e2d8ff;
     border-radius: 18px;
-    background: var(--onfy-brand-soft);
+    background: #eee8ff;
   }
   .product-module #setRail .pwell {
     border-radius: 17px 17px 0 0;
-    background: var(--onfy-brand-soft);
+    background: #f8f7fc;
   }
   .product-module #setRail .pinfo {
     flex: 1;
     padding: 10px 14px 14px;
-    background: var(--onfy-brand-soft);
+    background: #eee8ff;
   }
   .product-module .pwell { border-radius: 17px; }
   .product-module .pwell > img {
