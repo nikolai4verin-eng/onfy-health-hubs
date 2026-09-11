@@ -705,8 +705,8 @@
   .brandlogo { width: 78px; }
 }
 
-/* Menopause product rails: mobile proportions from the live ONFY hub. */
-@media (max-width: 760px) {
+/* Shared Health Hub product rails: mobile proportions from the live ONFY hub. */
+@media (max-width: 900px) {
   .product-module { padding-top: 42px; overflow: hidden; }
   .product-module + .product-module { padding-top: 58px; }
   .product-module .sechead { align-items: flex-start; }
