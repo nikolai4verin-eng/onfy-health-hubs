@@ -587,13 +587,13 @@
 
 @media (max-width: 760px) {
   .menopause-hub .partner-section { margin-top: 20px; }
-  .menopause-hub .partner-shell { height: 403px; padding: 20px; border-radius: 0; }
-  .menopause-hub .partner-head { height: 49px; margin: 0; }
-  .menopause-hub .partner-head .secttl { font-size: 24px; line-height: 30px; }
+  .menopause-hub .partner-shell { height: 342px; padding: 16px; border-radius: 0; }
+  .menopause-hub .partner-head { height: 44px; margin: 0; }
+  .menopause-hub .partner-head .secttl { font-size: 22px; line-height: 28px; }
   .menopause-hub .partner-arrows { display: none; }
   .menopause-hub .partner-body {
     width: 100%;
-    height: 314px;
+    height: 266px;
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
@@ -602,12 +602,23 @@
     -webkit-overflow-scrolling: touch;
   }
   .menopause-hub .partner-body::-webkit-scrollbar { display: none; }
-  .menopause-hub .partner-promo { flex: 0 0 203px; width: 203px; height: 307px; scroll-snap-align: start; }
-  .menopause-hub .partner-promo img { height: 140px; }
+  .menopause-hub .partner-promo { flex: 0 0 162px; width: 162px; height: 260px; padding: 10px; scroll-snap-align: start; }
+  .menopause-hub .partner-label { font-size: 11px; line-height: 17px; }
+  .menopause-hub .partner-offer { padding: 4px 9px; font-size: 11px; line-height: 18px; }
+  .menopause-hub .partner-code { padding: 2px 7px; font-size: 10px; line-height: 15px; }
+  .menopause-hub .partner-promo img { height: 116px; }
+  .menopause-hub .partner-promo > p:last-child { font-size: 8px; line-height: 11px; }
   .menopause-hub .partner-rail { flex: 0 0 auto; width: max-content; overflow: visible; }
-  .menopause-hub .partner-product { flex-basis: 184px; }
-  .menopause-hub .partner-well { width: 184px; height: 184px; }
-  .menopause-hub .partner-legal { padding: 0 20px; font-size: 11px; line-height: 16px; }
+  .menopause-hub .partner-product { flex-basis: 148px; height: 252px; }
+  .menopause-hub .partner-well { width: 148px; height: 148px; padding: 12px; }
+  .menopause-hub .partner-well > img { width: 82px; height: 82px; }
+  .menopause-hub .partner-well .pplus { width: 34px; height: 34px; }
+  .menopause-hub .partner-price { margin-top: 7px; }
+  .menopause-hub .partner-price b { font-size: 12px; line-height: 19px; }
+  .menopause-hub .partner-name { height: 34px; font-size: 11px; line-height: 17px; }
+  .menopause-hub .partner-unit { font-size: 11px; line-height: 17px; }
+  .menopause-hub .partner-discount { padding: 3px 8px; font-size: 11px; line-height: 17px; }
+  .menopause-hub .partner-legal { padding: 0 16px; font-size: 11px; line-height: 16px; }
   .menopause-hub .therapy-banner { min-height: 0; padding: 24px; flex-direction: column; gap: 24px; border-radius: 20px; }
   .menopause-hub .therapy-copy h2 { font-size: 22px; line-height: 28px; }
   .menopause-hub .therapy-text { font-size: 15px; line-height: 24px; }
